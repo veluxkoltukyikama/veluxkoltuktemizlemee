@@ -6,7 +6,7 @@
 
 <title>Velux Koltuk Temizleme | Ankara Koltuk Yıkama</title>
 
-<meta name="description" content="Etimesgut, Çayyolu, Eryaman, Bağlıca koltuk yıkama hizmeti. Buharlı koltuk temizleme ile derinlemesine hijyen.">
+<meta name="description" content="Etimesgut, Çayyolu, Eryaman, Bağlıca koltuk yıkama hizmeti. Profesyonel buharlı koltuk temizleme ile derinlemesine hijyen.">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -14,48 +14,56 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 body{background:#f5f7fa;color:#333}
 
-/* HEADER */
-header{background:#1E3A8A;color:white;text-align:center;padding:70px 20px;}
-header h1{font-size:32px}
-.btn{display:inline-block;margin-top:15px;padding:15px 25px;border-radius:8px;color:white;font-weight:bold}
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url('https://raw.githubusercontent.com/veluxkoltukyikama/veluxkoltuktemizlemee/main/foto1.jpg');
+background-size:cover;
+color:white;
+text-align:center;
+padding:120px 20px;
+}
+.hero h1{font-size:40px;margin-bottom:15px}
+.hero p{font-size:18px;margin-bottom:20px}
+
+.btn{padding:15px 25px;border-radius:8px;color:white;font-weight:bold;margin:5px;display:inline-block}
 .call{background:#10B981}
 .wp{background:#25D366}
 
 /* SECTION */
-section{padding:50px 20px;max-width:1100px;margin:auto}
+section{max-width:1100px;margin:auto;padding:60px 20px}
 h2{text-align:center;color:#1E3A8A;margin-bottom:30px}
 
-/* CARD */
+/* CARDS */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:white;padding:20px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1)}
-.card:hover{transform:translateY(-5px)}
+.card{background:white;padding:25px;border-radius:15px;box-shadow:0 8px 25px rgba(0,0,0,0.1);transition:0.3s}
+.card:hover{transform:translateY(-10px)}
 
 /* GALERİ */
 .slider{display:flex;overflow-x:auto;gap:15px}
-.slider img{width:280px;border-radius:10px;cursor:pointer}
+.slider img{width:300px;border-radius:12px;cursor:pointer}
 
 /* MODAL */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:black;justify-content:center;align-items:center}
 .modal img{max-width:90%}
 
-/* FLOAT */
-.whatsapp{position:fixed;right:20px;bottom:90px;background:#25D366;color:white;padding:15px;border-radius:50%}
-
-/* CALL BAR */
-.callbar{position:fixed;bottom:0;width:100%;background:#1E3A8A;text-align:center;padding:15px}
-.callbar a{color:white;font-weight:bold}
-
 /* STATS */
 .stats{display:flex;justify-content:space-around;text-align:center}
-.stats div h3{color:#1E3A8A}
+.stats h3{color:#1E3A8A;font-size:30px}
 
 /* TESTIMONIAL */
 .testimonial{background:white;padding:20px;border-radius:10px;margin-bottom:15px}
 
-/* SEO TEXT */
-.seo p{margin-bottom:15px;line-height:1.7}
+/* SEO */
+.seo p{margin-bottom:15px;line-height:1.8}
+
+/* FLOAT */
+.whatsapp{position:fixed;right:20px;bottom:90px;background:#25D366;color:white;padding:15px;border-radius:50%}
+.callbar{position:fixed;bottom:0;width:100%;background:#1E3A8A;text-align:center;padding:15px}
+.callbar a{color:white;font-weight:bold}
 
 @media(max-width:768px){
+.hero h1{font-size:28px}
 .stats{flex-direction:column;gap:20px}
 }
 </style>
@@ -63,22 +71,25 @@ h2{text-align:center;color:#1E3A8A;margin-bottom:30px}
 
 <body>
 
-<header>
-<h1>Velux Koltuk Temizleme</h1>
-<p>Ankara Profesyonel Koltuk Yıkama</p>
+<!-- HERO -->
+<div class="hero">
+<h1>Koltuklarınızı İlk Günkü Gibi Temizliyoruz</h1>
+<p>Ankara’nın en güvenilir koltuk yıkama hizmeti</p>
 <a href="tel:05399234374" class="btn call">Hemen Ara</a>
 <a href="https://wa.me/905399234374" class="btn wp">WhatsApp</a>
-</header>
+</div>
 
+<!-- HİZMET -->
 <section>
 <h2>Hizmetlerimiz</h2>
 <div class="grid">
-<div class="card"><h3>Buharlı Koltuk Yıkama</h3><p>Derinlemesine hijyen sağlar.</p></div>
-<div class="card"><h3>Leke Çıkarma</h3><p>Zorlu lekeler tamamen yok edilir.</p></div>
+<div class="card"><h3>Buharlı Koltuk Yıkama</h3><p>Derinlemesine temizlik sağlar.</p></div>
+<div class="card"><h3>Leke Çıkarma</h3><p>Zorlu lekeler tamamen giderilir.</p></div>
 <div class="card"><h3>Hijyen Temizlik</h3><p>Bakterilere karşı etkili çözüm.</p></div>
 </div>
 </section>
 
+<!-- GALERİ -->
 <section>
 <h2>Çalışmalarımız</h2>
 <div class="slider">
@@ -90,27 +101,28 @@ h2{text-align:center;color:#1E3A8A;margin-bottom:30px}
 </div>
 </section>
 
+<!-- YORUMLAR -->
 <section>
 <h2>Müşteri Yorumları</h2>
-
-<div class="testimonial">Eryaman’da koltuk yıkama hizmeti aldım, sonuç mükemmel.</div>
-<div class="testimonial">Bağlıca’da çağırdım, sararmalar gitti tertemiz oldu.</div>
-<div class="testimonial">Çayyolu’nda hizmet aldım, çok memnun kaldım.</div>
-
+<div class="testimonial">Eryaman’da koltuklar tertemiz oldu.</div>
+<div class="testimonial">Bağlıca’da sonuç mükemmel.</div>
+<div class="testimonial">Çayyolu’nda çok memnun kaldım.</div>
 </section>
 
+<!-- SAYAÇ -->
 <section class="stats">
 <div><h3>1000+</h3><p>Koltuk</p></div>
 <div><h3>500+</h3><p>Müşteri</p></div>
 <div><h3>%100</h3><p>Memnuniyet</p></div>
 </section>
 
+<!-- SEO -->
 <section class="seo">
 <h2>Ankara Koltuk Yıkama</h2>
 
-<p>Etimesgut koltuk yıkama, Çayyolu koltuk yıkama, Eryaman koltuk yıkama ve Bağlıca koltuk yıkama hizmetlerimiz ile Ankara’nın tüm bölgelerinde profesyonel hizmet sunuyoruz.</p>
+<p>Etimesgut koltuk yıkama, Çayyolu koltuk yıkama, Eryaman koltuk yıkama ve Bağlıca koltuk yıkama hizmetlerimiz ile Ankara genelinde profesyonel temizlik sunuyoruz...</p>
 
-<p>Buharlı koltuk temizleme yöntemi ile koltuklarınız derinlemesine temizlenir ve hijyen sağlanır.</p>
+<p>Buharlı koltuk temizleme yöntemi sayesinde koltuklarınız derinlemesine temizlenir...</p>
 
 </section>
 
@@ -122,7 +134,6 @@ h2{text-align:center;color:#1E3A8A;margin-bottom:30px}
 <!-- FLOAT -->
 <a href="https://wa.me/905399234374" class="whatsapp">💬</a>
 
-<!-- CALL BAR -->
 <div class="callbar">
 <a href="tel:05399234374">📞 Hemen Ara</a>
 </div>
