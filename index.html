@@ -5,11 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Velux Koltuk Temizleme | Ankara Koltuk Yıkama</title>
 <meta name="description" content="Velux Koltuk Temizleme ile Ankara’da profesyonel koltuk yıkama hizmeti. Buharlı temizlik, leke çıkarma ve hijyenik koltuklar.">
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f5f7fa;color:#333;}
+.navbar {background:#1E3A8A;overflow:hidden;position:relative;font-size:18px;}
+.navbar a {float:left;display:block;color:white;text-align:center;padding:16px 18px;text-decoration:none;font-weight:bold;}
+.navbar a:hover {background:#16336b;}
+.navbar .icon {display:none;}
+@media screen and (max-width:768px){
+  .navbar a {display:none;}
+  .navbar a.icon {float:right;display:block;cursor:pointer;font-size:24px;padding:16px;}
+}
+@media screen and (max-width:768px){
+  .navbar.responsive {position:relative;}
+  .navbar.responsive a.icon {position:absolute;right:0;top:0;}
+  .navbar.responsive a {float:none;display:block;text-align:left;}
+}
+.hero{background-image:url('images/foto1.jpg');background-size:cover;background-position:center;height:100vh;display:flex;align-items:center;justify-content:center;color:white;text-align:center;position:relative;}
+.hero::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);}
+.hero-content{position:relative;z-index:1;max-width:900px;}
+.hero h1{font-size:48px;margin-bottom:15px;font-weight:700;}
+.hero p{font-size:20px;margin-bottom:20px;}
+.hero .btn{padding:16px 26px;background:#25D366;color:white;border-radius:10px;text-decoration:none;font-weight:600;margin:5px;display:inline-block;transition:0.3s;}
+.hero .btn:hover{background:#1ebe5b;}
+section{max-width:1100px;margin:auto;padding:60px 20px;}
+h2{text-align:center;color:#1E3A8A;margin-bottom:40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+.card{background:white;padding:25px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.1);transition:0.3s;}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 25px rgba(0,0,0,0.15);}
+.card img{width:100%;border-radius:12px;margin-bottom:15px;}
+.info-section{background:#e8eef8;padding:60px 20px;}
+.info-container{display:flex;gap:30px;align-items:center;flex-wrap:wrap;}
+.info-img{flex:1;min-width:280px;}
+.info-img img{width:100%;border-radius:15px;}
+.info-text{flex:1;min-width:280px;}
+.slider{display:flex;overflow-x:auto;gap:20px;padding-bottom:10px;}
+.slider .before-after{position:relative;flex:0 0 auto;width:300px;height:200px;overflow:hidden;border-radius:15px;cursor:pointer;}
+.before-after img{position:absolute;width:100%;height:100%;object-fit:cover;transition:all 0.5s ease;}
+.before-after .after{width:0;}
+.before-after:hover .after{width:100%;}
+.testimonial-slider{display:flex;overflow-x:auto;gap:20px;padding-bottom:10px;}
+.testimonial-slider .card{flex:0 0 auto;width:300px;}
+.whatsapp{position:fixed;right:20px;bottom:120px;background:#25D366;color:white;padding:16px 22px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:16px;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,0.2);}
+.callbar{position:fixed;bottom:0;width:100%;background:#1E3A8A;text-align:center;padding:20px;z-index:999;}
+.callbar a{color:white;font-weight:bold;text-decoration:none;font-size:18px;}
+@media(max-width:768px){
+.hero h1{font-size:32px;}
+.hero p{font-size:16px;}
+.grid{grid-template-columns:1fr;}
+.info-container{flex-direction:column;}
+.slider .before-after,.testimonial-slider .card{width:250px;height:180px;}
+}
+</style>
 </head>
 <body>
 
-<!-- NAVBAR -->
 <div class="navbar" id="myNavbar">
   <a href="index.html">Ana Sayfa</a>
   <a href="etimesgut.html">Etimesgut</a>
@@ -26,50 +77,34 @@
 </div>
 
 <!-- HERO -->
-<section class="hero-modern">
-  <div class="hero-content">
-    <h1>Koltuklarınızı İlk Günkü Gibi Temizliyoruz</h1>
-    <p>Ankara’nın en güvenilir koltuk yıkama hizmeti</p>
-    <div class="hero-btns">
-      <a href="tel:05399234374" class="btn">📞 Hemen Ara</a>
-      <a href="https://wa.me/905399234374" class="btn">💬 WhatsApp</a>
-    </div>
-  </div>
+<section class="hero">
+<div class="hero-content">
+<h1>Koltuklarınızı İlk Günkü Gibi Temizliyoruz</h1>
+<p>Ankara’nın en güvenilir koltuk yıkama hizmeti</p>
+<a href="tel:05399234374" class="btn">📞 Hemen Ara</a>
+<a href="https://wa.me/905399234374" class="btn">💬 WhatsApp</a>
+</div>
 </section>
 
 <!-- HİZMETLER -->
 <section>
 <h2>Hizmetlerimiz</h2>
 <div class="grid">
-  <div class="card service-card">
-    <img src="images/foto1.jpg" alt="Buharlı Koltuk Yıkama">
-    <h3>Buharlı Koltuk Yıkama</h3>
-    <p>Derin temizlik ve hijyen sağlar.</p>
-  </div>
-  <div class="card service-card">
-    <img src="images/foto2.jpg" alt="Leke Çıkarma">
-    <h3>Leke Çıkarma</h3>
-    <p>Tüm kumaş türleri için özel yöntemler.</p>
-  </div>
-  <div class="card service-card">
-    <img src="images/foto3.jpg" alt="Koku Giderme">
-    <h3>Koku Giderme</h3>
-    <p>Koltuklarınız ferah ve hijyenik kokar.</p>
-  </div>
+  <div class="card"><img src="images/foto2.jpg" alt=""><h3>Buharlı Koltuk Yıkama</h3><p>Derin temizlik ve hijyen sağlar.</p></div>
+  <div class="card"><img src="images/foto3.jpg" alt=""><h3>Leke Çıkarma</h3><p>Tüm kumaş türleri için özel yöntemler.</p></div>
+  <div class="card"><img src="images/foto4.jpg" alt=""><h3>Koku Giderme</h3><p>Koltuklarınız ferah ve hijyenik kokar.</p></div>
 </div>
 </section>
 
 <!-- KOLTUK YIKAMA NEDİR -->
 <section class="info-section">
 <div class="info-container">
-  <div class="info-img">
-    <img src="images/foto4.jpg" alt="Koltuk Yıkama Nedir?">
-  </div>
-  <div class="info-text">
-    <h2>Koltuk Yıkama Nedir?</h2>
-    <p>Buharlı temizlik ile koltuklar bakterilerden arındırılır. Mikrofiber, kadife ve deri gibi kumaş türleri için özel yöntemler uygulanır.</p>
-    <p>Velux Koltuk Temizleme, her kumaş türüne uygun güvenli ve etkili temizlik sunar. Koltuklarınız ilk günkü ferahlığına kavuşur.</p>
-  </div>
+<div class="info-img"><img src="images/foto4.jpg" alt=""></div>
+<div class="info-text">
+<h2>Koltuk Yıkama Nedir?</h2>
+<p>Buharlı temizlik ile koltuklarınız bakterilerden arındırılır. Mikrofiber, kadife ve deri gibi kumaş türleri için özel yöntemler uygulanır.</p>
+<p>Velux Koltuk Temizleme, her kumaş türüne uygun güvenli ve etkili temizlik sunar. Koltuklarınız ilk günkü ferahlığına kavuşur.</p>
+</div>
 </div>
 </section>
 
@@ -77,18 +112,9 @@
 <section>
 <h2>Before / After Galeri</h2>
 <div class="slider">
-  <div class="before-after">
-    <img src="images/foto1.jpg" class="before" alt="Before">
-    <img src="images/foto2.jpg" class="after" alt="After">
-  </div>
-  <div class="before-after">
-    <img src="images/foto3.jpg" class="before" alt="Before">
-    <img src="images/foto4.jpg" class="after" alt="After">
-  </div>
-  <div class="before-after">
-    <img src="images/foto5.jpg" class="before" alt="Before">
-    <img src="images/foto1.jpg" class="after" alt="After">
-  </div>
+<div class="before-after"><img src="images/foto1.jpg" class="before"><img src="images/foto2.jpg" class="after"></div>
+<div class="before-after"><img src="images/foto3.jpg" class="before"><img src="images/foto4.jpg" class="after"></div>
+<div class="before-after"><img src="images/foto5.jpg" class="before"><img src="images/foto1.jpg" class="after"></div>
 </div>
 </section>
 
@@ -96,16 +122,18 @@
 <section>
 <h2>Müşteri Yorumları</h2>
 <div class="testimonial-slider">
-  <div class="card"><p>“Eryaman’da hizmet aldım, koltuklar resmen yenilendi. Profesyonel ekip ve hızlı servis.”</p></div>
-  <div class="card"><p>“Bağlıca’da sararmalar tamamen gitti. Memnun kaldım.”p></div>
-  <div class="card"><p>“Çayyolu’nda çok profesyonel hizmet aldım, herkese tavsiye ederim.”p></div>
+<div class="card"><p>“Eryaman’da hizmet aldım, koltuklar resmen yenilendi. Profesyonel ekip ve hızlı servis.”</p></div>
+<div class="card"><p>“Bağlıca’da sararmalar tamamen gitti. Memnun kaldım.”p></div>
+<div class="card"><p>“Çayyolu’nda çok profesyonel hizmet aldım, herkese tavsiye ederim.”p></div>
 </div>
 </section>
 
-<!-- CALLBAR & WHATSAPP -->
 <a href="https://wa.me/905399234374" class="whatsapp">💬 Fiyat Al</a>
 <div class="callbar"><a href="tel:05399234374">📞 Hemen Ara</a></div>
 
-<script src="js/script.js"></script>
+<script>
+function toggleNavbar(){var x=document.getElementById("myNavbar");if(x.className==="navbar"){x.className+=" responsive";}else{x.className="navbar";}}
+</script>
+
 </body>
 </html>
