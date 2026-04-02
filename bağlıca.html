@@ -1,15 +1,127 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>Bağlıca Koltuk Yıkama | Velux</title>
-<meta name="description" content="Bağlıca koltuk yıkama hizmeti. Buharlı temizlik ile koltuklarınız hijyenik ve lekesiz olur.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bağlıca Koltuk Yıkama | Velux Profesyonel Temizlik Ankara</title>
+    <meta name="description" content="Bağlıca'da profesyonel buharlı koltuk yıkama hizmeti. Velux Temizlik ile leke çıkarma, hijyen garantisi ve uygun fiyatlar. Hemen arayın!">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1E3A8A; 
+            --secondary: #25D366; 
+            --accent: #FACC15; 
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+
+        /* --- Navigasyon --- */
+        .navbar { background: #fff; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 2000; }
+        .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 26px; color: var(--primary); text-decoration: none; font-weight: 800; letter-spacing: -1px; }
+        .logo span { color: var(--secondary); }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 14px; transition: 0.3s; }
+
+        /* --- Hero Bölümü --- */
+        .hero-district { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('foto1.jpg'); 
+            background-size: cover; background-position: center;
+            padding: 120px 20px; text-align: center; color: #fff;
+        }
+        .hero-district h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 15px; text-transform: uppercase; }
+        .hero-district p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 35px; opacity: 0.9; }
+
+        /* --- Butonlar --- */
+        .btn { padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.4s; font-size: 16px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .btn-call { background: var(--accent); color: #000; }
+        .btn-whatsapp { background: var(--secondary); color: #fff; }
+        .btn:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
+        /* --- İçerik Kartı --- */
+        .main-card { max-width: 1100px; margin: -60px auto 40px; background: #fff; padding: 50px 30px; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); position: relative; z-index: 10; }
+        .main-card h2 { color: var(--primary); font-size: 2rem; margin-bottom: 20px; text-align: center; }
+        .main-card p { margin-bottom: 20px; font-size: 1.05rem; color: #475569; text-align: justify; }
+
+        /* --- Foto Galeri --- */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+        .gallery-item { border-radius: 15px; overflow: hidden; height: 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .gallery-item:hover img { transform: scale(1.1); }
+
+        /* --- Footer & Mobile --- */
+        footer { background: var(--primary); color: #fff; padding: 60px 20px; text-align: center; margin-bottom: 60px; }
+        .mobile-nav { position: fixed; bottom: 0; width: 100%; display: grid; grid-template-columns: 1fr 1fr; z-index: 3000; }
+        .m-btn { padding: 20px; text-align: center; color: #fff; text-decoration: none; font-weight: bold; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .m-call { background: var(--primary); }
+        .m-whatsapp { background: var(--secondary); }
+
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .main-card { margin-top: -40px; padding: 30px 20px; }
+        }
+    </style>
 </head>
 <body>
-<h1>Bağlıca Koltuk Yıkama</h1>
-<p>Bağlıca koltuk yıkama hizmetimiz ile sararmış ve kirli koltuklarınızı yeniliyoruz. Velux Koltuk Temizleme, güvenli ve hızlı hizmet sunar.</p>
-<p>Buharlı koltuk yıkama yöntemi ile hem derinlemesine temizlik sağlanır hem de bakteriler yok edilir.</p>
-<a href="tel:05399234374">📞 Hemen Ara</a>
-<a href="https://wa.me/905399234374">💬 WhatsApp'tan Yaz</a>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">VELUX <span>TEMİZLİK</span></a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html#bolgeler">Bölgelerimiz</a></li>
+            <li><a href="https://wa.me/905399234374" style="color:var(--secondary)">Fiyat Al</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="hero-district">
+    <h1>Bağlıca Koltuk Yıkama</h1>
+    <p>Bağlıca bölgesinde koltuklarınızdaki inatçı lekelere ve bakterilere son! Profesyonel ekipman ve bitkisel şampuanlarla yerinde yıkama hizmeti.</p>
+    <div class="cta-group">
+        <a href="tel:05399234374" class="btn btn-call">📞 Hemen Ara</a>
+        <a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WhatsApp Mesaj</a>
+    </div>
+</header>
+
+<main class="main-card">
+    <h2>Bağlıca'ın Güvenilir Temizlik Servisi</h2>
+    <p><b>bağlı koltuk yıkama</b> aramalarınızda Velux Temizlik olarak en ön sıradayız. Koltuklarınızın kumaş yapısına özel (kadife, nubuk, tay tüyü vb.) temizlik yöntemleri uyguluyoruz. Buharlı vakum makinelerimiz sayesinde koltuklarınızın sadece yüzeyini değil, süngerlerine kadar işleyen toz ve akarları da temizliyoruz.</p>
+    
+    <p>Çocuklarınız ve evcil hayvanlarınızın sağlığı için tamamen anti-alerjik ve kimyasal içermeyen ürünler kullanıyoruz. bağlı'daki tüm mahalle ve sitelere aynı gün servis imkanımız mevcuttur.</p>
+
+    <h3>Neden bağlı Velux Temizlik?</h3>
+    <ul style="margin: 20px 0 30px 20px; color: #475569;">
+        <li>✅ Profesyonel Buharlı Vakum Teknolojisi</li>
+        <li>✅ Bitkisel ve Organik Şampuanlar</li>
+        <li>✅ %100 Leke Çıkarma Garantisi</li>
+        <li>✅ Hızlı Kuruma Süresi (Aynı Gün Kullanım)</li>
+    </ul>
+
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="foto2.jpg" alt="bağlı Koltuk Temizleme"></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Buharlı Yıkama bağlı"></div>
+        <div class="gallery-item"><img src="foto4.jpg" alt="bağlı Leke Çıkarma"></div>
+        <div class="gallery-item"><img src="foto5.jpg" alt="bağlı Hijyenik Yıkama"></div>
+    </div>
+</main>
+
+<footer>
+    <h3>VELUX TEMİZLİK - bağlı</h3>
+    <p style="margin-top: 10px; opacity: 0.8;">Ankara'nın her noktasına profesyonel hizmet götürüyoruz.</p>
+    <p style="font-size: 14px; margin-top: 20px;">&copy; 2026 Tüm Hakları Saklıdır.</p>
+</footer>
+
+<div class="mobile-nav">
+    <a href="tel:05399234374" class="m-btn m-call">📞 ARA</a>
+    <a href="https://wa.me/905399234374" class="m-btn m-whatsapp">💬 WHATSAPP</a>
+</div>
+
 </body>
 </html>
