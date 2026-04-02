@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar" id="myNavbar">
   <a href="index.html">Ana Sayfa</a>
   <a href="etimesgut.html">Etimesgut</a>
@@ -24,50 +25,84 @@
   <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">&#9776;</a>
 </div>
 
-<div class="hero" style="background-image:url('images/foto1.jpg');">
-<h1>Koltuklarınızı İlk Günkü Gibi Temizliyoruz</h1>
-<p>Ankara’nın en güvenilir koltuk yıkama hizmeti</p>
-<a href="tel:05399234374" class="btn">📞 Hemen Ara</a>
-<a href="https://wa.me/905399234374" class="btn">💬 WhatsApp</a>
-</div>
+<!-- HERO -->
+<section class="hero-modern">
+  <div class="hero-content">
+    <h1>Koltuklarınızı İlk Günkü Gibi Temizliyoruz</h1>
+    <p>Ankara’nın en güvenilir koltuk yıkama hizmeti</p>
+    <div class="hero-btns">
+      <a href="tel:05399234374" class="btn">📞 Hemen Ara</a>
+      <a href="https://wa.me/905399234374" class="btn">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
 
+<!-- HİZMETLER -->
 <section>
 <h2>Hizmetlerimiz</h2>
 <div class="grid">
-<div class="card"><h3>Buharlı Koltuk Yıkama</h3><p>Derin temizlik ve hijyen sağlar.</p></div>
-<div class="card"><h3>Leke Çıkarma</h3><p>Tüm kumaş türleri için özel yöntemler.</p></div>
-<div class="card"><h3>Koku Giderme</h3><p>Koltuklarınız ferah ve hijyenik kokar.</p></div>
+  <div class="card service-card">
+    <img src="images/foto1.jpg" alt="Buharlı Koltuk Yıkama">
+    <h3>Buharlı Koltuk Yıkama</h3>
+    <p>Derin temizlik ve hijyen sağlar.</p>
+  </div>
+  <div class="card service-card">
+    <img src="images/foto2.jpg" alt="Leke Çıkarma">
+    <h3>Leke Çıkarma</h3>
+    <p>Tüm kumaş türleri için özel yöntemler.</p>
+  </div>
+  <div class="card service-card">
+    <img src="images/foto3.jpg" alt="Koku Giderme">
+    <h3>Koku Giderme</h3>
+    <p>Koltuklarınız ferah ve hijyenik kokar.</p>
+  </div>
 </div>
 </section>
 
-<section>
-<h2>Koltuk Yıkama Nedir?</h2>
-<p>Koltuk yıkama, kumaş ve deri koltukların özel makineler ve temizlik kimyasalları ile temizlenmesidir. Buharlı yöntem sayesinde derinlemesine hijyen sağlanır, bakteriler ve toz akarları yok edilir.</p>
-<p>Kumaş türüne göre (mikrofiber, kadife, suni ve doğal deri) farklı teknikler uygulanır. Velux Koltuk Temizleme, her kumaş türü için özel bakım sunar ve koltuklarınızı korur.</p>
+<!-- KOLTUK YIKAMA NEDİR -->
+<section class="info-section">
+<div class="info-container">
+  <div class="info-img">
+    <img src="images/foto4.jpg" alt="Koltuk Yıkama Nedir?">
+  </div>
+  <div class="info-text">
+    <h2>Koltuk Yıkama Nedir?</h2>
+    <p>Buharlı temizlik ile koltuklar bakterilerden arındırılır. Mikrofiber, kadife ve deri gibi kumaş türleri için özel yöntemler uygulanır.</p>
+    <p>Velux Koltuk Temizleme, her kumaş türüne uygun güvenli ve etkili temizlik sunar. Koltuklarınız ilk günkü ferahlığına kavuşur.</p>
+  </div>
+</div>
 </section>
 
+<!-- BEFORE/AFTER GALERİ -->
 <section>
-<h2>Çalışmalarımız</h2>
+<h2>Before / After Galeri</h2>
 <div class="slider">
-<img src="images/foto1.jpg" onclick="openModal(this.src)">
-<img src="images/foto2.jpg" onclick="openModal(this.src)">
-<img src="images/foto3.jpg" onclick="openModal(this.src)">
-<img src="images/foto4.jpg" onclick="openModal(this.src)">
-<img src="images/foto5.jpg" onclick="openModal(this.src)">
+  <div class="before-after">
+    <img src="images/foto1.jpg" class="before" alt="Before">
+    <img src="images/foto2.jpg" class="after" alt="After">
+  </div>
+  <div class="before-after">
+    <img src="images/foto3.jpg" class="before" alt="Before">
+    <img src="images/foto4.jpg" class="after" alt="After">
+  </div>
+  <div class="before-after">
+    <img src="images/foto5.jpg" class="before" alt="Before">
+    <img src="images/foto1.jpg" class="after" alt="After">
+  </div>
 </div>
 </section>
 
+<!-- MÜŞTERİ YORUMLARI -->
 <section>
 <h2>Müşteri Yorumları</h2>
-<div class="card"><p>“Eryaman’da hizmet aldım, koltuklar resmen yenilendi. Profesyonel ekip ve hızlı servis.”</p></div>
-<div class="card"><p>“Bağlıca’da sararmalar tamamen gitti. Memnun kaldım.”p></div>
-<div class="card"><p>“Çayyolu’nda çok profesyonel hizmet aldım, herkese tavsiye ederim.”p></div>
+<div class="testimonial-slider">
+  <div class="card"><p>“Eryaman’da hizmet aldım, koltuklar resmen yenilendi. Profesyonel ekip ve hızlı servis.”</p></div>
+  <div class="card"><p>“Bağlıca’da sararmalar tamamen gitti. Memnun kaldım.”p></div>
+  <div class="card"><p>“Çayyolu’nda çok profesyonel hizmet aldım, herkese tavsiye ederim.”p></div>
+</div>
 </section>
 
-<div class="modal" id="modal" onclick="this.style.display='none'">
-<img id="modal-img">
-</div>
-
+<!-- CALLBAR & WHATSAPP -->
 <a href="https://wa.me/905399234374" class="whatsapp">💬 Fiyat Al</a>
 <div class="callbar"><a href="tel:05399234374">📞 Hemen Ara</a></div>
 
