@@ -1,26 +1,137 @@
-<title>Çayyolu Koltuk Yıkama | Velux Premium Temizlik Hizmeti</title>
-<meta name="description" content="Çayyolu, Ümitköy ve Beysukent bölgelerinde VIP koltuk yıkama hizmeti. Deri ve hassas kumaşlar için profesyonel buharlı temizlik.">
-
-<header class="hero">
-    <h1>Çayyolu Koltuk Yıkama</h1>
-    <p>Premium yaşam alanlarınız için premium temizlik çözümleri.</p>
-</header>
-<main class="content-box">
-    <h2>Çayyolu'nun Tercihi: Velux Premium</h2>
-    <p><b>Çayyolu koltuk yıkama</b> denildiğinde akla gelen ilk isim olmaktan gurur duyuyoruz. Villalarınızdaki ve dairelerinizdeki değerli koltuk takımları, nubuk, ipek veya tay tüyü gibi hassas kumaşlar bizim uzmanlık alanımızdır.</p>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çayyolu Koltuk Yıkama | Velux Profesyonel VIP Temizlik</title>
+    <meta name="description" content="Çayyolu, Ümitköy ve Beysukent bölgesinde profesyonel buharlı koltuk yıkama. Hassas kumaşlar için garantili hijyen ve yerinde servis.">
     
-    <div class="grid-info">
-        <div class="info-card"><h3>💎 Hassas Yıkama</h3><p>Değerli kumaşlarınız için düşük basınçlı ve özel solüsyonlu yıkama.</p></div>
-        <div class="info-card"><h3>🌟 Kusursuz Hijyen</h3><p>Buhar teknolojisi ile görünmeyen kirlerden tamamen kurtulun.</p></div>
-        <div class="info-card"><h3>🛡️ Garanti</h3><p>Memnun kalmadığınız takdirde ücretsiz tekrar yıkama garantisi.</p></div>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1E3A8A; 
+            --secondary: #25D366; 
+            --accent: #FACC15; 
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+
+        /* --- Navigasyon --- */
+        .navbar { background: #fff; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 2000; }
+        .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 26px; color: var(--primary); text-decoration: none; font-weight: 800; }
+        .logo span { color: var(--secondary); }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 14px; }
+
+        /* --- Hero Bölümü --- */
+        .hero-district { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('foto1.jpg'); 
+            background-size: cover; background-position: center;
+            padding: 120px 20px; text-align: center; color: #fff;
+        }
+        .hero-district h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 15px; }
+        .hero-district p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 35px; opacity: 0.9; }
+
+        /* --- Butonlar --- */
+        .btn { padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.4s; font-size: 16px; display: inline-flex; align-items: center; gap: 10px; }
+        .btn-call { background: var(--accent); color: #000; }
+        .btn-whatsapp { background: var(--secondary); color: #fff; }
+
+        /* --- İçerik Alanı --- */
+        .main-card { max-width: 1100px; margin: -60px auto 40px; background: #fff; padding: 50px 30px; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); position: relative; z-index: 10; }
+        .main-card h2 { color: var(--primary); font-size: 2.2rem; margin-bottom: 25px; text-align: center; }
+        .main-card p { margin-bottom: 20px; font-size: 1.1rem; color: #475569; text-align: justify; }
+
+        /* --- Bilgi Kartları --- */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+        .info-card { background: #f8fafc; padding: 30px; border-radius: 15px; border-top: 4px solid var(--primary); }
+        .info-card h3 { color: var(--primary); margin-bottom: 10px; }
+
+        /* --- Foto Galeri --- */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 40px; }
+        .gallery-item { border-radius: 15px; overflow: hidden; height: 260px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .gallery-item:hover img { transform: scale(1.1); }
+
+        /* --- Alt Bar (Mobil) --- */
+        .mobile-nav { position: fixed; bottom: 0; width: 100%; display: none; z-index: 3000; grid-template-columns: 1fr 1fr; }
+        .m-btn { padding: 20px; text-align: center; color: #fff; text-decoration: none; font-weight: bold; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .m-call { background: var(--primary); }
+        .m-whatsapp { background: var(--secondary); }
+
+        @media (max-width: 768px) {
+            .nav-menu { display: none; }
+            .mobile-nav { display: grid; }
+            .main-card { margin-top: -40px; padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">VELUX <span>TEMİZLİK</span></a>
+        <ul class="nav-menu">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html#bolgeler">Bölgeler</a></li>
+            <li><a href="https://wa.me/905399234374">Fiyat Al</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="hero-district">
+    <h1>Çayyolu Koltuk Yıkama</h1>
+    <p>Çayyolu, Ümitköy ve Beysukent bölgelerine özel Premium buharlı temizlik. Değerli mobilyalarınız uzman ellere emanet.</p>
+    <div class="cta-group">
+        <a href="tel:05399234374" class="btn btn-call">📞 Hemen Ara</a>
+        <a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WhatsApp Bilgi</a>
+    </div>
+</header>
+
+<main class="main-card">
+    <h2>Çayyolu'nun Tercihi Velux Temizlik</h2>
+    <p><b>Çayyolu koltuk yıkama</b> ihtiyaçlarınızda, bölgenin mimari yapısına ve yaşam standartlarına uygun, sessiz ve profesyonel hizmet sunuyoruz. Evinizdeki ithal kumaşlar, nubuk koltuklar veya hassas deri yüzeyler için her kumaşa özel temizlik protokolleri uyguluyoruz.</p>
+    
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>💎 Premium Hizmet</h3>
+            <p>Hassas ve değerli kumaşlar için kumaş analizi yaparak en uygun yöntemi seçiyoruz.</p>
+        </div>
+        <div class="info-card">
+            <h3>🫧 Derin Hijyen</h3>
+            <p>140 derece buhar gücüyle mayt, bakteri ve akar temizliğinde %100 sonuç.</p>
+        </div>
+        <div class="info-card">
+            <h3>🌿 Bitkisel Çözümler</h3>
+            <p>Kimyasal kalıntı bırakmayan, tamamen bitkisel bazlı şampuanlar kullanıyoruz.</p>
+        </div>
     </div>
 
-    <h3>Çayyolu ve Beysukent Bölgesine Özel Servis</h3>
-    <p>Çayyolu, Konutkent ve Ümitköy hattında uzman ekibimizle her gün hizmetinizdeyiz. Sadece koltuk değil, yatak ve sandalye yıkama hizmetlerimizle de evinizin tüm tekstil ürünlerinde hijyen sağlıyoruz.</p>
-    <div class="gallery">
-        <img src="foto2.jpg" alt="Çayyolu Koltuk Yıkama">
-        <img src="foto3.jpg" alt="VIP Temizlik">
-        <img src="foto4.jpg" alt="Çayyolu Buharlı Yıkama">
-        <img src="foto5.jpg" alt="Temiz Koltuk Takımı">
+    <p>Çayyolu ve çevresinde randevu saatine sadık kalarak, profesyonel ekipmanlarımızla yaşam alanlarınıza ferahlık getiriyoruz. Yüksek vakum gücü sayesinde koltuklarınız aynı gün içinde kurumuş ve kullanıma hazır hale gelir.</p>
+
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="foto2.jpg" alt="Çayyolu Koltuk Yıkama Uygulama"></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Profesyonel Buharlı Temizlik"></div>
+        <div class="gallery-item"><img src="foto4.jpg" alt="Leke Çıkarma İşlemi"></div>
+        <div class="gallery-item"><img src="foto5.jpg" alt="Hijyenik Sonuç"></div>
     </div>
 </main>
+
+<footer style="background: var(--primary); color: #fff; padding: 50px 20px; text-align: center; margin-bottom: 60px;">
+    <h3>VELUX TEMİZLİK - ÇAYYOLU</h3>
+    <p style="margin-top: 10px; opacity: 0.8;">Bölgenin en güvenilir koltuk temizleme servisi.</p>
+</footer>
+
+<div class="mobile-nav">
+    <a href="tel:05399234374" class="m-btn m-call">📞 ARA</a>
+    <a href="https://wa.me/905399234374" class="m-btn m-whatsapp">💬 WHATSAPP</a>
+</div>
+
+</body>
+</html>
