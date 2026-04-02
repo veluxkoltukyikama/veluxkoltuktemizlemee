@@ -1,15 +1,142 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>Yenikent Koltuk Yıkama | Velux</title>
-<meta name="description" content="Yenikent koltuk yıkama hizmeti. Derinlemesine hijyen ve profesyonel temizlik.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yenikent Koltuk Yıkama | Velux Profesyonel Buharlı Temizlik</title>
+    <meta name="description" content="Yenikent ve çevresinde profesyonel koltuk yıkama hizmeti. 29 Ekim, Menderes ve tüm mahallelerde buharlı, hijyenik ve uygun fiyatlı temizlik.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #1E3A8A; 
+            --secondary: #25D366; 
+            --accent: #FACC15; 
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+
+        /* --- Navigasyon --- */
+        .navbar { background: #fff; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 2000; }
+        .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 26px; color: var(--primary); text-decoration: none; font-weight: 800; }
+        .logo span { color: var(--secondary); }
+
+        /* --- Hero Bölümü --- */
+        .hero-district { 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('foto1.jpg'); 
+            background-size: cover; background-position: center;
+            padding: 120px 20px; text-align: center; color: #fff;
+        }
+        .hero-district h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 15px; text-transform: uppercase; }
+
+        /* --- Butonlar --- */
+        .btn { padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.4s; font-size: 16px; display: inline-flex; align-items: center; gap: 10px; }
+        .btn-call { background: var(--accent); color: #000; }
+        .btn-whatsapp { background: var(--secondary); color: #fff; }
+
+        /* --- İçerik Alanı --- */
+        .main-card { max-width: 1100px; margin: -60px auto 40px; background: #fff; padding: 50px 30px; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); position: relative; z-index: 10; }
+        .main-card h2 { color: var(--primary); font-size: 2.2rem; margin-bottom: 25px; text-align: center; }
+        
+        /* --- Yenikent Mahalleler --- */
+        .neighborhood-list { background: #f1f5f9; padding: 25px; border-radius: 15px; margin: 30px 0; }
+        .neighborhood-list h4 { margin-bottom: 15px; color: var(--primary); }
+        .n-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+        .n-item { background: #fff; padding: 10px; border-radius: 8px; font-weight: 600; text-align: center; font-size: 14px; border: 1px solid #e2e8f0; }
+
+        /* --- Özellikler --- */
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+        .info-card { background: #fff; padding: 30px; border-radius: 15px; border-top: 5px solid var(--secondary); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+
+        /* --- Galeri --- */
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 40px; }
+        .gallery-item { border-radius: 15px; overflow: hidden; height: 260px; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .gallery-item:hover img { transform: scale(1.1); }
+
+        /* --- Alt Bar (Mobil) --- */
+        .mobile-nav { position: fixed; bottom: 0; width: 100%; display: none; z-index: 3000; grid-template-columns: 1fr 1fr; }
+        .m-btn { padding: 20px; text-align: center; color: #fff; text-decoration: none; font-weight: bold; }
+        .m-call { background: var(--primary); }
+        .m-whatsapp { background: var(--secondary); }
+
+        @media (max-width: 768px) {
+            .mobile-nav { display: grid; }
+            .main-card { margin-top: -40px; padding: 30px 20px; }
+        }
+    </style>
 </head>
 <body>
-<h1>Yenikent Koltuk Yıkama</h1>
-<p>Yenikent koltuk yıkama hizmetimiz ile koltuklarınız hijyenik ve temiz hale gelir. Profesyonel ekipman ve tekniklerle hizmet sunuyoruz.</p>
-<p>Müşteri memnuniyeti bizim önceliğimizdir. Hemen iletişime geçebilirsiniz.</p>
-<a href="tel:05399234374">📞 Hemen Ara</a>
-<a href="https://wa.me/905399234374">💬 WhatsApp'tan Yaz</a>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">VELUX <span>TEMİZLİK</span></a>
+    </div>
+</nav>
+
+<header class="hero-district">
+    <h1>Yenikent Koltuk Yıkama</h1>
+    <p>Yenikent'in yerel temizlik gücü. Buharlı dezenfeksiyon ve güçlü vakum ile koltuklarınızda ilk günkü ferahlık.</p>
+    <div class="cta-group">
+        <a href="tel:05399234374" class="btn btn-call">📞 Hemen Ara</a>
+        <a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WhatsApp</a>
+    </div>
+</header>
+
+<main class="main-card">
+    <h2>Yenikent'te Profesyonel Hizmet</h2>
+    <p><b>Yenikent koltuk yıkama</b> aramalarınızda, bölgeye en hızlı servis sağlayan ekip olarak yanınızdayız. Yenikent'in hızla gelişen mahallelerinde, yeni taşınan komşularımıza ve koltuğunu tazelemek isteyen tüm ailelere bitkisel şampuanlarla sağlıklı çözümler sunuyoruz.</p>
+    
+    <div class="neighborhood-list">
+        <h4>📍 Yenikent Hizmet Bölgelerimiz:</h4>
+        <div class="n-grid">
+            <div class="n-item">29 Ekim</div>
+            <div class="n-item">Menderes</div>
+            <div class="n-item">Mustafa Kemal</div>
+            <div class="n-item">Fevzi Çakmak</div>
+            <div class="n-item">Cumhuriyet</div>
+            <div class="n-item">İstasyon</div>
+        </div>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>🧼 İnatçı Lekelere Son</h3>
+            <p>Kahve, çay ve mama lekelerinde kumaş dokusuna zarar vermeyen profesyonel solüsyonlar.</p>
+        </div>
+        <div class="info-card">
+            <h3>💨 140° Buhar Gücü</h3>
+            <p>Buharın gücüyle gözle görülmeyen mayt ve bakterileri tamamen yok ediyoruz.</p>
+        </div>
+        <div class="info-card">
+            <h3>🚚 Ücretsiz Yerinde Servis</h3>
+            <p>Yenikent genelinde hiçbir ulaşım bedeli almadan kapınızda hizmet veriyoruz.</p>
+        </div>
+    </div>
+
+    <div class="gallery-grid">
+        <div class="gallery-item"><img src="foto2.jpg" alt="Yenikent Koltuk Yıkama"></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Yenikent Buharlı Temizlik"></div>
+        <div class="gallery-item"><img src="foto4.jpg" alt="Leke Çıkarma İşlemi"></div>
+        <div class="gallery-item"><img src="foto5.jpg" alt="Temiz Sonuç"></div>
+    </div>
+</main>
+
+<footer style="background: var(--primary); color: #fff; padding: 50px 20px; text-align: center; margin-bottom: 60px;">
+    <h3>VELUX TEMİZLİK - YENİKENT BÖLGE SERVİSİ</h3>
+    <p>Tertemiz koltuklar, sağlıklı yarınlar.</p>
+</footer>
+
+<div class="mobile-nav">
+    <a href="tel:05399234374" class="m-btn m-call">HEMEN ARA</a>
+    <a href="https://wa.me/905399234374" class="m-btn m-whatsapp">WHATSAPP</a>
+</div>
+
 </body>
 </html>
