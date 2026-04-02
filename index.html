@@ -7,56 +7,41 @@
 <meta name="description" content="Velux Koltuk Temizleme ile Etimesgut, Çayyolu ve Ankara’nın tüm semtlerinde profesyonel buharlı koltuk yıkama hizmeti. Hızlı, hijyenik ve garantili temizlik.">
 <meta name="keywords" content="koltuk yıkama, buharlı koltuk temizleme, Velux Koltuk, Etimesgut koltuk yıkama, Ankara temizlik hizmeti">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Velux Koltuk Temizleme",
-  "image": "https://raw.githubusercontent.com/veluxkoltukyikama/veluxkoltuktemizlemee/main/foto1.jpg",
-  "telephone": "+905399234374",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Ankara, Türkiye",
-    "addressLocality": "Etimesgut",
-    "addressRegion": "Ankara",
-    "postalCode": "06800",
-    "addressCountry": "TR"
-  },
-  "url": "https://www.veluxkoltuk.com",
-  "priceRange": "₺₺",
-  "openingHours": "Mo-Sa 08:00-20:00",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 39.0245,
-    "longitude": 32.6729
-  }
-}
-</script>
-
 <style>
-body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f7fa;color:#333;}
-header{background:#1E3A8A;color:white;padding:20px 0;text-align:center;}
-header h1{margin:0;font-size:2em;}
-nav{background:#3B82F6;display:flex;justify-content:center;padding:10px 0;}
-nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold;}
-section{padding:50px 20px;max-width:1200px;margin:auto;}
-h2{color:#1E40AF;margin-bottom:20px;text-align:center;}
-p{line-height:1.8;}
-.services,.districts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
-.card{background:white;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1);padding:20px;transition:transform 0.3s;}
-.card:hover{transform:translateY(-5px);}
-.card h3{color:#1E3A8A;}
-footer{background:#1E3A8A;color:white;text-align:center;padding:20px 0;margin-top:50px;}
-.contact-btn{display:inline-block;padding:15px 20px;border-radius:8px;text-decoration:none;font-weight:bold;color:white;margin-top:10px;}
-.phone-btn{background-color:#10B981;}
-.whatsapp-btn{background-color:#25D366;}
-.horizontal-gallery{display:flex;overflow-x:auto;gap:15px;padding:10px 0;}
-.horizontal-gallery::-webkit-scrollbar{height:8px;}
-.horizontal-gallery::-webkit-scrollbar-thumb{background:#3B82F6;border-radius:4px;}
-.gallery-item{flex:0 0 auto;width:250px;}
-.gallery-item img{width:100%;border-radius:8px;}
-@media(max-width:600px){nav{flex-direction:column;} nav a{margin:5px 0;}}
+/* Reset ve temel stiller */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f5f7fa;color:#333;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;border-radius:10px;}
+header{background:#1E3A8A;color:white;padding:80px 20px;text-align:center;position:relative;}
+header h1{font-size:3em;margin-bottom:15px;}
+header p{font-size:1.2em;margin-bottom:20px;}
+.header-btns a{display:inline-block;padding:15px 25px;margin:0 10px;border-radius:8px;font-weight:bold;color:white;transition:0.3s;}
+.header-btns a.phone-btn{background:#10B981;}
+.header-btns a.whatsapp-btn{background:#25D366;}
+.header-btns a:hover{opacity:0.9;}
+nav{background:#3B82F6;display:flex;justify-content:center;padding:15px 0;position:sticky;top:0;z-index:10;}
+nav a{color:white;font-weight:bold;margin:0 15px;transition:0.3s;}
+nav a:hover{color:#10B981;}
+section{padding:60px 20px;max-width:1200px;margin:auto;}
+h2{color:#1E40AF;margin-bottom:40px;text-align:center;font-size:2em;}
+.services,.districts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+.card{background:white;border-radius:15px;box-shadow:0 6px 20px rgba(0,0,0,0.1);padding:25px;transition:0.3s;overflow:hidden;}
+.card:hover{transform:translateY(-10px);box-shadow:0 10px 30px rgba(0,0,0,0.15);}
+.card h3{color:#1E3A8A;margin-bottom:15px;}
+.horizontal-gallery{display:flex;overflow-x:auto;gap:15px;padding:10px 0;scroll-behavior:smooth;}
+.horizontal-gallery::-webkit-scrollbar{height:10px;}
+.horizontal-gallery::-webkit-scrollbar-thumb{background:#3B82F6;border-radius:5px;}
+.gallery-item{flex:0 0 auto;width:300px;}
+.gallery-item img{border-radius:12px;}
+footer{background:#1E3A8A;color:white;text-align:center;padding:40px 20px;margin-top:50px;}
+footer a{color:white;}
+.contact-section{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:30px;}
+.contact-btn{display:inline-block;padding:15px 25px;border-radius:8px;font-weight:bold;color:white;transition:0.3s;}
+.contact-btn.phone-btn{background-color:#10B981;}
+.contact-btn.whatsapp-btn{background-color:#25D366;}
+.contact-btn:hover{opacity:0.9;}
+@media(max-width:768px){header h1{font-size:2.2em;} header p{font-size:1em;} nav{flex-wrap:wrap;}}
 </style>
 </head>
 <body>
@@ -64,6 +49,10 @@ footer{background:#1E3A8A;color:white;text-align:center;padding:20px 0;margin-to
 <header>
 <h1>Velux Koltuk Temizleme</h1>
 <p>Etimesgut, Çayyolu ve Ankara'nın tüm semtlerinde profesyonel buharlı koltuk yıkama</p>
+<div class="header-btns">
+<a href="tel:+905399234374" class="phone-btn"><i class="fas fa-phone"></i> 0539 923 43 74</a>
+<a href="https://wa.me/905399234374" target="_blank" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp'tan Mesaj Gönder</a>
+</div>
 </header>
 
 <nav>
@@ -79,12 +68,12 @@ footer{background:#1E3A8A;color:white;text-align:center;padding:20px 0;margin-to
 <div class="card">
 <img src="https://raw.githubusercontent.com/veluxkoltukyikama/veluxkoltuktemizlemee/main/foto1.jpg" alt="Buharlı Koltuk Temizliği">
 <h3>Buharlı Koltuk Temizliği</h3>
-<p>Velux Koltuk Temizleme, koltuklarınızı derinlemesine temizler. Buhar teknolojisi ile kir, leke ve bakterileri anında yok eder. Koltuklarınız hem hijyenik hem de mis gibi kokar.</p>
+<p>Koltuklarınızı derinlemesine temizliyoruz. Buhar teknolojisi ile kir, leke ve bakteriler anında yok edilir. Hijyenik ve mis gibi kokulu koltuklar.</p>
 </div>
 <div class="card">
 <img src="https://raw.githubusercontent.com/veluxkoltukyikama/veluxkoltuktemizlemee/main/foto2.jpg" alt="Leke ve Kir Çıkarma">
 <h3>Leke ve Kir Çıkarma</h3>
-<p>İster kahve lekesi, ister evcil hayvan izleri olsun, profesyonel ekipmanımızla tüm zorlu lekelerden kurtulabilirsiniz. Koltuklarınız ilk günkü gibi canlı ve temiz olur.</p>
+<p>Kahve lekesi, evcil hayvan izleri ve tüm zorlu lekeler profesyonel ekipmanımızla temizlenir. Koltuklarınız ilk günkü gibi canlı ve temiz olur.</p>
 </div>
 <div class="card">
 <img src="https://raw.githubusercontent.com/veluxkoltukyikama/veluxkoltuktemizlemee/main/foto3.jpg" alt="Hijyen ve Sağlık">
@@ -97,15 +86,15 @@ footer{background:#1E3A8A;color:white;text-align:center;padding:20px 0;margin-to
 <section id="districts">
 <h2>Hizmet Verdiğimiz Semtler</h2>
 <div class="districts">
-<div class="card"><h3>Etimesgut</h3><p>Etimesgut ve çevresinde hızlı ve güvenilir buharlı koltuk yıkama hizmeti sunuyoruz. Koltuklarınızın hijyenini garanti ediyoruz.</p></div>
-<div class="card"><h3>Eryaman</h3><p>Eryaman semtinde Velux Koltuk olarak profesyonel temizlik hizmeti sağlıyoruz. Tüm koltuk tiplerinde etkili temizlik.</p></div>
-<div class="card"><h3>Bağlıca</h3><p>Bağlıca’da kaliteli ve güvenilir koltuk yıkama hizmeti ile evinizi tertemiz yapıyoruz. Tüm lekelerden kurtulun.</p></div>
-<div class="card"><h3>Ümitköy</h3><p>Ümitköy semtinde hijyenik ve etkili buharlı koltuk temizliği sunuyoruz. Koltuklarınız ilk günkü gibi temiz ve mis kokulu olur.</p></div>
-<div class="card"><h3>Çayyolu</h3><p>Çayyolu’nda profesyonel ekibimizle koltuklarınızın hijyenini garanti ediyoruz. Tüm lekeler ve kirler etkili bir şekilde çıkarılır.</p></div>
-<div class="card"><h3>Yaşamkent</h3><p>Yaşamkent semtinde Velux Koltuk Temizleme ile güvenilir ve kaliteli hizmet alabilirsiniz. Koltuklarınız derinlemesine temizlenir.</p></div>
+<div class="card"><h3>Etimesgut</h3><p>Etimesgut ve çevresinde hızlı ve güvenilir buharlı koltuk yıkama hizmeti sunuyoruz.</p></div>
+<div class="card"><h3>Eryaman</h3><p>Eryaman semtinde Velux Koltuk olarak profesyonel temizlik hizmeti sağlıyoruz.</p></div>
+<div class="card"><h3>Bağlıca</h3><p>Bağlıca’da kaliteli ve güvenilir koltuk yıkama hizmeti ile evinizi tertemiz yapıyoruz.</p></div>
+<div class="card"><h3>Ümitköy</h3><p>Ümitköy semtinde hijyenik ve etkili buharlı koltuk temizliği sunuyoruz.</p></div>
+<div class="card"><h3>Çayyolu</h3><p>Çayyolu’nda profesyonel ekibimizle koltuklarınızın hijyenini garanti ediyoruz.</p></div>
+<div class="card"><h3>Yaşamkent</h3><p>Yaşamkent semtinde Velux Koltuk Temizleme ile güvenilir ve kaliteli hizmet alabilirsiniz.</p></div>
 <div class="card"><h3>Konutkent</h3><p>Konutkent ve çevresinde profesyonel buharlı koltuk temizliği ile evinizi hijyenik hale getiriyoruz.</p></div>
 <div class="card"><h3>İncek</h3><p>İncek’te Velux Koltuk Temizleme olarak hızlı, güvenilir ve etkili koltuk yıkama hizmeti sunuyoruz.</p></div>
-<div class="card"><h3>Beytepe</h3><p>Beytepe semtinde koltuklarınızın tüm kir, leke ve bakterilerden arındırılmasını sağlıyoruz. Profesyonel ve garantili temizlik.</p></div>
+<div class="card"><h3>Beytepe</h3><p>Beytepe semtinde koltuklarınızın tüm kir, leke ve bakterilerden arındırılmasını sağlıyoruz.</p></div>
 </div>
 </section>
 
@@ -123,18 +112,10 @@ footer{background:#1E3A8A;color:white;text-align:center;padding:20px 0;margin-to
 <section id="contact">
 <h2>İletişim ve Lokasyon</h2>
 <p>Velux Koltuk Temizleme ile iletişime geçin veya bulunduğunuz semtte hizmet alın:</p>
-
-<div style="display:flex; flex-wrap:wrap; gap:20px;">
-<div style="flex:1; min-width:280px;">
-<h3>Telefonla Hemen Ulaş</h3>
+<div class="contact-section">
 <a href="tel:+905399234374" class="contact-btn phone-btn"><i class="fas fa-phone"></i> 0539 923 43 74</a>
-</div>
-<div style="flex:1; min-width:280px;">
-<h3>WhatsApp ile İletişim</h3>
 <a href="https://wa.me/905399234374" target="_blank" class="contact-btn whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp'tan Mesaj Gönder</a>
 </div>
-</div>
-
 <h3 style="margin-top:30px;">Konumumuz</h3>
 <div style="width:100%; height:400px;">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.123456789!2d32.6729!3d39.0245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34abcdef12345%3A0xabcdef1234567890!2sVelux+Koltuk+Temizleme!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
