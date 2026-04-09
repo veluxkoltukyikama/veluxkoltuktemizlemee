@@ -6,6 +6,9 @@
 <title>Velux Koltuk Temizleme | Ankara Profesyonel Koltuk Yıkama</title>
 <meta name="description" content="Ankara'da profesyonel buharlı koltuk yıkama. İncek, Çankaya, Eryaman ve tüm bölgelerde 140°C buharla derinlemesine hijyen ve leke çıkarma hizmeti.">
 
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,8 +42,6 @@ body { font-family:'Open Sans',sans-serif; background:var(--bg-light); color:var
 .nav-container { max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:15px 20px; }
 .logo { font-size:24px; color:var(--primary); text-decoration:none; font-weight:800; }
 .logo span { color:var(--secondary); }
-.nav-menu { display:flex; list-style:none; gap:20px; align-items:center; }
-.nav-menu a { text-decoration:none; color:var(--text-dark); font-weight:600; font-size:14px; transition:0.3s; }
 
 /* Hero */
 .hero { 
@@ -53,28 +54,31 @@ body { font-family:'Open Sans',sans-serif; background:var(--bg-light); color:var
 .btn-call { background: var(--accent); color:#000; }
 .btn-whatsapp { background: var(--secondary); color:#fff; }
 
-/* YENİ STATS TASARIMI (Görüntüdeki Lacivert Blok Yerine) */
+/* Stats Panel */
 .modern-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     padding: 30px 15px;
     background: #fff;
-    margin-top: -30px; /* Hero üzerine hafif taşma */
+    margin-top: -30px;
     position: relative;
     z-index: 10;
     border-radius: 25px 25px 0 0;
     box-shadow: 0 -10px 25px rgba(0,0,0,0.05);
 }
-.stat-card {
-    background: #f8fafc;
-    padding: 20px 10px;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid #e2e8f0;
-}
+.stat-card { background: #f8fafc; padding: 20px 10px; border-radius: 15px; text-align: center; border: 1px solid #e2e8f0; }
 .stat-card strong { display: block; font-size: 22px; color: var(--primary); font-family: 'Montserrat'; }
-.stat-card span { font-size: 12px; color: #64748b; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-card span { font-size: 12px; color: #64748b; font-weight: 700; text-transform: uppercase; }
+
+/* Galeri (GERİ GELDİ) */
+.gallery-section { padding: 40px 0; background: #fff; }
+.gallery-title { text-align: center; margin-bottom: 20px; font-family: 'Montserrat'; color: var(--primary); }
+.gallery-wrapper { display: flex; gap: 15px; overflow-x: auto; padding: 10px 20px; scroll-snap-type: x mandatory; -ms-overflow-style: none; scrollbar-width: none; }
+.gallery-wrapper::-webkit-scrollbar { display: none; }
+.gallery-item { flex: 0 0 280px; height: 380px; border-radius: 20px; overflow: hidden; position: relative; scroll-snap-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-overlay { position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: #fff; font-size: 14px; font-weight: bold; }
 
 /* SEO İçerik Alanı */
 .seo-content { padding: 40px 20px; max-width: 1200px; margin: auto; }
@@ -83,15 +87,14 @@ body { font-family:'Open Sans',sans-serif; background:var(--bg-light); color:var
 .district-seo-card p { font-size: 0.95rem; color: #475569; text-align: justify; }
 
 /* District Grid */
-.district-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; padding: 20px; }
+.district-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(140px,1fr)); gap:10px; padding: 20px; max-width: 1200px; margin: auto; }
 .district-link { background:var(--primary); color:#fff; padding:15px; border-radius:10px; text-decoration:none; font-size:14px; font-weight:700; text-align:center; transition:0.3s; }
 
-/* Mobil Alt Menü */
+/* Mobil Alt Nav */
 .mobile-nav { position:fixed; bottom:0; width:100%; display:none; grid-template-columns:1fr 1fr; z-index:9999; }
 .m-btn { padding:18px; text-align:center; color:#fff; text-decoration:none; font-weight:bold; }
 
 @media(max-width:768px){
-    .nav-menu { display:none; }
     .mobile-nav { display:grid; }
 }
 </style>
@@ -101,7 +104,7 @@ body { font-family:'Open Sans',sans-serif; background:var(--bg-light); color:var
 <nav class="navbar">
     <div class="nav-container">
         <a href="#" class="logo">VELUX <span>TEMİZLİK</span></a>
-        <div class="hamburger" style="font-size:24px; cursor:pointer;" onclick="toggleMenu()">☰</div>
+        <div style="font-size:24px; cursor:pointer;">☰</div>
     </div>
 </nav>
 
@@ -122,20 +125,31 @@ body { font-family:'Open Sans',sans-serif; background:var(--bg-light); color:var
     <div class="stat-card"><strong>HIZLI</strong><span>Aynı Gün Servis</span></div>
 </section>
 
+<section class="gallery-section">
+    <h2 class="gallery-title">Uygulama Galerimiz</h2>
+    <div class="gallery-wrapper">
+        <div class="gallery-item"><img src="foto1.jpg" alt="Ankara Koltuk Yıkama"><div class="gallery-overlay">Derin Temizlik</div></div>
+        <div class="gallery-item"><img src="foto2.jpg" alt="Buharlı Temizlik"><div class="gallery-overlay">Buharlı Dezenfekte</div></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Leke Çıkarma Uzmanı"><div class="gallery-overlay">Leke Çıkarma</div></div>
+        <div class="gallery-item"><img src="foto4.jpg" alt="Velux Temizlik"><div class="gallery-overlay">Maksimum Hijyen</div></div>
+        <div class="gallery-item"><img src="foto5.jpg" alt="Koltuk Yıkama"><div class="gallery-overlay">Ferah Sonuçlar</div></div>
+    </div>
+</section>
+
 <section class="seo-content">
     <div class="district-seo-card">
         <h2>Eryaman & Etimesgut Koltuk Yıkama</h2>
-        <p>Eryaman koltuk yıkama ve Etimesgut bölgesinde profesyonel temizlik arayanlar için Velux Temizlik, yerinde buharlı yıkama teknolojisiyle fark yaratıyor. Bağlıca ve çevresinde özellikle çocuklu ailelerin tercihi olan antibakteriyel temizlik yöntemlerimizle, koltuklarınızdaki mayt, bakteri ve derin kirleri 140 derece ısı ile tamamen yok ediyoruz. Evcil hayvan lekeleri ve inatçı çay/kahve lekeleri konusunda uzman ekiplerimizle Eryaman'ın her noktasına bir telefon kadar yakınız.</p>
+        <p>Eryaman koltuk yıkama ve Etimesgut bölgesinde profesyonel temizlik arayanlar için Velux Temizlik, yerinde buharlı yıkama teknolojisiyle fark yaratıyor. Bağlıca ve çevresinde özellikle çocuklu ailelerin tercihi olan antibakteriyel temizlik yöntemlerimizle, koltuklarınızdaki mayt, bakteri ve derin kirleri 140 derece ısı ile tamamen yok ediyoruz.</p>
     </div>
 
     <div class="district-seo-card">
         <h2>Çankaya, İncek & Çayyolu Hizmet Bölgesi</h2>
-        <p>Ankara'nın en seçkin bölgelerinden Çankaya, İncek ve Ümitköy'de lüks kumaş türlerine (kadife, nubuk, deri) özel temizlik protokolleri uyguluyoruz. İncek koltuk yıkama servisimiz, bölgenin tozlu yapısına karşı derinlemesine vakumlama ve durulama yaparak koltuklarınızın ömrünü uzatır. Yaşamkent ve Çayyolu bölgesindeki konutlar için hızlı randevu sistemiyle aynı gün içinde koltuklarınızı yıkayıp kurumaya hazır hale getiriyoruz.</p>
+        <p>Ankara'nın en seçkin bölgelerinden Çankaya, İncek ve Ümitköy'de lüks kumaş türlerine özel temizlik protokolleri uyguluyoruz. İncek koltuk yıkama servisimiz, bölgenin tozlu yapısına karşı derinlemesine vakumlama ve durulama yaparak koltuklarınızın ömrünü uzatır.</p>
     </div>
 
     <div class="district-seo-card">
-        <h2>Sincan & Yenikent Ekonomik ve Hijyenik Çözümler</h2>
-        <p>Sincan ve Yenikent bölgelerinde koltuk yıkama fiyatları ve kalite dengesini en iyi şekilde sunuyoruz. Velux Temizlik olarak, mutfakla birleşik salonlardaki koltuklarda oluşan yağ ve ağır kokuları profesyonel koku gidericilerle temizliyoruz. Sincan koltuk yıkama hizmetimiz kapsamında sadece yüzeysel değil, sünger altına kadar inen vakum gücüyle tam hijyen sağlıyoruz. Yenikent lokasyonunda da hızlı mobil ekiplerimizle hizmetinizdeyiz.</p>
+        <h2>Sincan & Yenikent Yerinde Temizlik</h2>
+        <p>Sincan ve Yenikent bölgelerinde koltuk yıkama fiyatları ve kalite dengesini en iyi şekilde sunuyoruz. Sincan koltuk yıkama hizmetimiz kapsamında sünger altına kadar inen vakum gücüyle tam hijyen sağlıyoruz.</p>
     </div>
 </section>
 
@@ -157,20 +171,13 @@ body { font-family:'Open Sans',sans-serif; background:var(--bg-light); color:var
 
 <footer style="background:var(--primary); color:#fff; padding:60px 20px 100px; text-align:center;">
     <p><strong>VELUX KOLTUK TEMİZLEME</strong></p>
-    <p>Ankara'nın Her Yerinde Hijyen</p>
+    <p>Ankara'nın Hijyen Noktası</p>
 </footer>
 
 <div class="mobile-nav">
     <a href="tel:05399234374" class="m-btn" style="background:var(--primary);">Hemen Ara</a>
     <a href="https://wa.me/905399234374" class="m-btn" style="background:var(--secondary);">WhatsApp</a>
 </div>
-
-<script>
-function toggleMenu() {
-    // Mobil menü işlevselliği buraya gelecek
-    alert("Menü yakında aktif!");
-}
-</script>
 
 </body>
 </html>
