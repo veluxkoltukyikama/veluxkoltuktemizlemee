@@ -3,43 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velux Koltuk Temizleme | Ankara Koltuk Yıkama Hizmeti - İncek, Etimesgut, Eryaman ve Diğer Bölgeler</title>
-<meta name="google-site-verification" content="F4XVGpOyV1ECOd8C7ecK6YEAkyI2ZpamUtSHScHZ5_o" />
-<meta name="description" content="Velux Koltuk Temizleme olarak Ankara'nın İncek, Etimesgut, Eryaman, Bağlıca, Çankaya, Çayyolu, Ümitköy, Yaşamkent, Turkuaz Yapracık, Konutkent, Sincan ve Yenikent bölgelerinde profesyonel koltuk yıkama, leke çıkarma ve hijyenik temizlik hizmeti sunuyoruz.">
+<title>Velux Koltuk Temizleme | Ankara Profesyonel Koltuk Yıkama</title>
+<meta name="description" content="Ankara'da profesyonel buharlı koltuk yıkama. İncek, Çankaya, Eryaman ve tüm bölgelerde 140°C buharla derinlemesine hijyen ve leke çıkarma hizmeti.">
 
-<!-- LocalBusiness Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Velux Koltuk Temizleme",
   "image": "https://www.veluxkoltuktemizleme.com/foto8.jpg",
-  "@id": "https://www.veluxkoltuktemizleme.com",
-  "url": "https://www.veluxkoltuktemizleme.com",
   "telephone": "+905399234374",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Ankara Genel Merkezi",
+    "streetAddress": "Ankara Genel",
     "addressLocality": "Ankara",
-    "addressRegion": "TR",
-    "postalCode": "06000",
     "addressCountry": "TR"
   },
-  "areaServed": ["İncek","Etimesgut","Eryaman","Bağlıca","Çankaya","Çayyolu","Ümitköy","Yaşamkent","Turkuaz Yapracık","Konutkent","Sincan","Yenikent"],
-  "priceRange": "₺₺"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.9334,
+    "longitude": 32.8597
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "21:00"
+  }
 }
 </script>
 
-<!-- Google Analytics (örnek, UA veya GA4 kodunu buraya ekle) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'GA_MEASUREMENT_ID');
-</script> -->
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root {
     --primary: #1E3A8A; 
@@ -50,162 +44,161 @@ gtag('config', 'GA_MEASUREMENT_ID');
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:'Open Sans',sans-serif; background:var(--bg-light); color:var(--text-dark); line-height:1.6; scroll-behavior:smooth; }
-h1,h2,h3 { font-family:'Montserrat',sans-serif; }
 
-/* Navbar */
+/* Navbar Geliştirme */
 .navbar { background:#fff; box-shadow:0 2px 15px rgba(0,0,0,0.1); position:sticky; top:0; z-index:2000; }
 .nav-container { max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:15px 20px; }
-.logo { font-size:26px; color:var(--primary); text-decoration:none; font-weight:800; letter-spacing:-1px; }
+.logo { font-size:24px; color:var(--primary); text-decoration:none; font-weight:800; }
 .logo span { color:var(--secondary); }
-.nav-menu { display:flex; list-style:none; gap:20px; }
+.nav-menu { display:flex; list-style:none; gap:20px; align-items:center; }
 .nav-menu a { text-decoration:none; color:var(--text-dark); font-weight:600; font-size:14px; transition:0.3s; }
 .nav-menu a:hover { color:var(--primary); }
-.hamburger { display:none; cursor:pointer; font-size:24px; }
 
-/* Hero */
+/* Hero Alanı Dinamikleştirme */
 .hero { 
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('foto8.jpg'); 
-    background-size: cover; 
-    background-position: center center;
-    background-repeat: no-repeat;
-    height:85vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; padding:0 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('foto8.jpg') center/cover no-repeat;
+    height:90vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; padding:0 20px;
 }
-.hero-content h1 { font-size:clamp(2.2rem,6vw,3.8rem); margin-bottom:20px; line-height:1.1; }
-.hero-content p { font-size:1.2rem; margin-bottom:35px; max-width:800px; margin-inline:auto; opacity:0.9; }
-.cta-box { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
-.btn { padding:18px 40px; border-radius:50px; text-decoration:none; font-weight:bold; transition:0.4s; font-size:16px; display:inline-flex; align-items:center; gap:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2); }
+.hero-content h1 { font-family:'Montserrat'; font-size:clamp(2rem,6vw,3.5rem); margin-bottom:15px; text-transform:uppercase; }
+.hero-content p { font-size:1.2rem; margin-bottom:30px; max-width:700px; margin-inline:auto; }
+
+/* Buton Efektleri */
+.btn { padding:15px 35px; border-radius:50px; text-decoration:none; font-weight:bold; transition:0.3s; display:inline-flex; align-items:center; gap:8px; }
 .btn-call { background: var(--accent); color:#000; }
 .btn-whatsapp { background: var(--secondary); color:#fff; }
-.btn:hover { transform: translateY(-5px); box-shadow:0 8px 25px rgba(0,0,0,0.3); }
+.btn:hover { transform: scale(1.05); }
 
-/* Hizmetler */
-section { padding:80px 20px; max-width:1200px; margin:auto; }
-.section-title { text-align:center; margin-bottom:50px; }
-.section-title h2 { color: var(--primary); font-size:2.5rem; margin-bottom:15px; }
-.section-title hr { width:60px; height:4px; background:var(--secondary); border:none; margin:auto; border-radius:2px; }
-.features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:30px; }
-.feature-card { background:#fff; padding:40px; border-radius:20px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.05); transition:0.3s; }
-.feature-card:hover { transform: translateY(-10px); }
-.icon-circle { width:70px; height:70px; background:#eff6ff; color: var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; font-size:30px; }
+/* İstatistik Alanı (YENİ) */
+.stats { display:flex; justify-content:space-around; background:var(--primary); color:#fff; padding:40px 20px; flex-wrap:wrap; gap:20px; }
+.stat-item { text-align:center; }
+.stat-item h4 { font-size:2rem; font-family:'Montserrat'; color:var(--accent); }
 
-/* Galeri */
-.gallery-bg { background:#fff; }
-.gallery-wrapper { display:flex; gap:20px; overflow-x:auto; padding:20px 0 40px; scroll-snap-type:x mandatory; -ms-overflow-style:none; scrollbar-width:none; }
-.gallery-wrapper::-webkit-scrollbar { display:none; }
-.gallery-item { flex:0 0 320px; height:450px; position:relative; border-radius:20px; overflow:hidden; scroll-snap-align:center; box-shadow:0 15px 35px rgba(0,0,0,0.1); }
-.gallery-item img { width:100%; height:100%; object-fit:cover; transition:0.5s; }
-.gallery-item:hover img { transform:scale(1.1); }
-.overlay { position:absolute; bottom:0; left:0; width:100%; padding:30px 20px; background:linear-gradient(transparent, rgba(0,0,0,0.9)); color:#fff; }
-.overlay span { background:var(--secondary); padding:4px 12px; border-radius:5px; font-size:12px; font-weight:bold; }
+/* Hizmet Kartları */
+.features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; margin-top:40px; }
+.feature-card { background:#fff; padding:30px; border-radius:15px; box-shadow:0 5px 20px rgba(0,0,0,0.05); text-align:center; border-bottom:4px solid transparent; transition:0.3s; }
+.feature-card:hover { border-color: var(--secondary); transform:translateY(-5px); }
 
-/* İlçeler - Grid düzeltmesi */
-.district-section { background:#f1f5f9; text-align:center; padding:80px 20px; }
-.district-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:15px; margin-top:30px; }
-.district-link { background:#fff; padding:15px; border-radius:12px; text-decoration:none; color: var(--primary); font-weight:700; border:1px solid #e2e8f0; transition:0.3s; display:flex; flex-direction:column; justify-content:center; min-height:70px; word-wrap:break-word; }
-.district-link:hover { background: var(--primary); color:#fff; border-color: var(--primary); }
-.district-desc { font-size:0.9rem; color:#475569; margin-top:5px; line-height:1.3; word-wrap:break-word; }
+/* Galeri (Kaydırma Efekti) */
+.gallery-wrapper { display:flex; gap:15px; overflow-x:auto; padding-bottom:20px; scroll-snap-type:x mandatory; }
+.gallery-item { flex:0 0 300px; height:400px; border-radius:15px; overflow:hidden; position:relative; scroll-snap-align:start; }
+.gallery-item img { width:100%; height:100%; object-fit:cover; }
 
-/* Koltuk Yıkama Süreci */
-#süreç { padding:80px 20px; max-width:1200px; margin:auto; background:#f8fafc; border-radius:15px; }
-#süreç ul { padding-left:20px; }
-#süreç li { margin-bottom:10px; }
+/* Bölgeler Linkleri */
+.district-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; }
+.district-link { background:#fff; padding:12px; border-radius:8px; text-decoration:none; font-size:14px; color:var(--primary); font-weight:700; border:1px solid #ddd; text-align:center; transition:0.3s; }
+.district-link:hover { background:var(--primary); color:#fff; }
 
-/* Footer */
-footer { background: var(--primary); color:#fff; padding:50px 20px; text-align:center; margin-bottom:50px; }
-footer p, footer h3 { margin:5px 0; }
-
-/* Mobil */
-.mobile-nav { position:fixed; bottom:0; width:100%; display:none; z-index:3000; grid-template-columns:1fr 1fr; }
-.m-btn { padding:18px; text-align:center; color:#fff; text-decoration:none; font-weight:bold; font-size:16px; }
-.m-call { background:var(--primary); }
-.m-whatsapp { background:var(--secondary); }
+/* Mobil Navigasyon */
+.mobile-nav { position:fixed; bottom:0; width:100%; display:none; grid-template-columns:1fr 1fr; z-index:9999; }
+.m-btn { padding:15px; text-align:center; color:#fff; text-decoration:none; font-weight:bold; }
 
 @media(max-width:768px){
-.nav-menu{display:none;}
-.hamburger{display:block;}
-.mobile-nav{display:grid;}
-section{padding:50px 20px;}
-.hero-content h1{font-size:2.2rem;}
-.gallery-item{flex:0 0 280px;}
+    .nav-menu { display:none; }
+    .mobile-nav { display:grid; }
+    .hero { height:70vh; }
 }
 </style>
 </head>
 <body>
 
 <nav class="navbar">
-<div class="nav-container">
-<a href="index.html" class="logo">VELUX <span>TEMİZLİK</span></a>
-<ul class="nav-menu">
-<li><a href="index.html">Ana Sayfa</a></li>
-<li><a href="#hizmetler">Hizmetlerimiz</a></li>
-<li><a href="#galeri">Galeri</a></li>
-<li><a href="#süreç">Süreç</a></li>
-<li><a href="#bolgeler">Bölgelerimiz</a></li>
-<li><a href="https://wa.me/905399234374" style="color:var(--secondary)">Fiyat Al</a></li>
-</ul>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-</div>
+    <div class="nav-container">
+        <a href="#" class="logo">VELUX <span>TEMİZLİK</span></a>
+        <ul class="nav-menu">
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#süreç">Nasıl Yıkıyoruz?</a></li>
+            <li><a href="#bolgeler">Bölgeler</a></li>
+            <li><a href="https://wa.me/905399234374?text=Merhaba, fiyat teklifi almak istiyorum." style="background:var(--secondary); color:#fff; padding:8px 15px; border-radius:20px;">Fiyat Al</a></li>
+        </ul>
+        <div class="hamburger" style="font-size:24px; cursor:pointer;" onclick="toggleMenu()">☰</div>
+    </div>
 </nav>
 
 <header class="hero">
-<div class="hero-content">
-<h1>Ankara'nın En Hijyenik <br><span style="color:var(--accent)">Koltuk Yıkama</span> Servisi</h1>
-<p>Velux Koltuk Temizleme olarak İncek, Etimesgut, Eryaman, Bağlıca, Çankaya, Çayyolu, Ümitköy, Yaşamkent, Turkuaz Yapracık, Konutkent, Sincan ve Yenikent bölgelerinde profesyonel koltuk yıkama, leke çıkarma ve hijyenik temizlik hizmeti sunuyoruz.</p>
-<div class="cta-box">
-<a href="tel:05399234374" class="btn btn-call">📞 Hemen Ara</a>
-<a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WhatsApp Bilgi</a>
-</div>
-</div>
+    <div class="hero-content">
+        <h1>Koltuklarınızda <span style="color:var(--accent)">Derin Hijyen</span></h1>
+        <p>Ankara'nın her yerine 1 saatte servis. 140 derece buhar gücüyle bakterilere veda edin, lekelerden kurtulun.</p>
+        <div class="cta-box">
+            <a href="tel:05399234374" class="btn btn-call">📞 Şimdi Ara</a>
+            <a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WhatsApp'tan Yaz</a>
+        </div>
+    </div>
 </header>
 
-<section id="hizmetler">
-<div class="section-title"><h2>Neler Yapıyoruz?</h2><hr></div>
-<div class="features-grid">
-<div class="feature-card"><div class="icon-circle">💨</div><h3>Buharlı Yıkama</h3><p>140 derece buhar gücüyle en derinlere nüfuz ederek mayt ve bakterileri yok ediyoruz.</p></div>
-<div class="feature-card"><div class="icon-circle">✨</div><h3>Leke Uzmanı</h3><p>Kahve, şarap veya evcil hayvan lekeleri için özel formüllü çözümler sunuyoruz.</p></div>
-<div class="feature-card"><div class="icon-circle">🔄</div><h3>Yerinde Temizlik</h3><p>Evinizden taşımadan, yerinde profesyonel makinelerle hızlı servis sağlıyoruz.</p></div>
-</div>
+<section class="stats">
+    <div class="stat-item"><h4>%100</h4><p>Müşteri Memnuniyeti</p></div>
+    <div class="stat-item"><h4>+15</h4><p>Hizmet Bölgesi</p></div>
+    <div class="stat-item"><h4>140°C</h4><p>Buhar Gücü</p></div>
+    <div class="stat-item"><h4>Aynı Gün</h4><p>Hızlı Servis</p></div>
 </section>
 
-<div class="gallery-bg" id="galeri">
-<section>
-<div class="section-title"><h2>Uygulama Galerimiz</h2><p>İşlem yaptığımız koltuklardaki inanılmaz değişimler (Kaydırılabilir)</p></div>
-<div class="gallery-wrapper">
-<div class="gallery-item"><img src="foto1.jpg" alt="Velux Temizlik Ankara Koltuk Yıkama"><div class="overlay"><span>UYGULAMA 1</span><h4>Derin Kir Çıkarma</h4></div></div>
-<div class="gallery-item"><img src="foto2.jpg" alt="Buharlı Koltuk Temizleme Ankara"><div class="overlay"><span>UYGULAMA 2</span><h4>Buharlı Dezenfekte</h4></div></div>
-<div class="gallery-item"><img src="foto3.jpg" alt="Leke Çıkarma Uzmanı Ankara"><div class="overlay"><span>UYGULAMA 3</span><h4>Lekesiz Sonuçlar</h4></div></div>
-<div class="gallery-item"><img src="foto4.jpg" alt="Profesyonel Koltuk Yıkama Hizmeti"><div class="overlay"><span>UYGULAMA 4</span><h4>Yüksek Vakum Gücü</h4></div></div>
-<div class="gallery-item"><img src="foto5.jpg" alt="Ankara Hijyenik Koltuk Temizliği"><div class="overlay"><span>UYGULAMA 5</span><h4>Ferah Kokulu Sonuç</h4></div></div>
-</div>
-</section>
-</div>
-
-<!-- Koltuk Yıkama Süreci -->
-<section id="süreç">
-  <div class="section-title">
-    <h2>Koltuk Yıkama Sürecimiz</h2>
-    <hr>
-  </div>
-  <div style="max-width:900px; margin:auto; text-align:left; line-height:1.7; color:#1e293b; font-size:1rem;">
-    <p>Velux Koltuk Temizleme olarak her koltuğu titizlikle ele alıyoruz. İşlem adımlarımız:</p>
-    <ul style="margin-top:15px; padding-left:20px;">
-      <li><strong>1. Ön Kontrol ve Lekeleri Tespit:</strong> Koltuklarınızın kumaş türünü ve mevcut lekelerini inceleyip en uygun temizleme yöntemini belirliyoruz.</li>
-      <li><strong>2. Toz ve Kirin Vakumlanması:</strong> Derinlemesine temizlik öncesi koltuk yüzeyindeki toz, tüy ve kirleri vakum ile arındırıyoruz.</li>
-      <li><strong>3. Özel Leke Çözücü Uygulama:</strong> Kahve, şarap, yağ ve evcil hayvan lekelerine özel formüllerle müdahale ediyoruz.</li>
-      <li><strong>4. Buharlı Derin Temizlik:</strong> 140°C buhar gücü ile mikropları öldürür ve kumaşın derinliklerini temizleriz.</li>
-      <li><strong>5. Yıkama ve Durulama:</strong> Özel makinelerimizle su ve temizlik solüsyonunu uygun oranlarda kullanarak koltukları hijyenik şekilde duruluyoruz.</li>
-      <li><strong>6. Kurutma ve Son Kontrol:</strong> Koltuklar hızlı kurutma ile kullanıma hazır hale gelir, son kontroller yapılarak size teslim edilir.</li>
-    </ul>
-    <p style="margin-top:15px;">Tüm bu adımlar, koltuklarınızın ilk günkü temizliğe ve hijyen standartlarına ulaşması için titizlikle uygulanır.</p>
-  </div>
+<section id="hizmetler" style="padding:80px 20px; max-width:1200px; margin:auto;">
+    <div style="text-align:center; margin-bottom:40px;">
+        <h2 style="font-family:'Montserrat'; color:var(--primary); font-size:2.2rem;">Profesyonel Çözümler</h2>
+        <div style="width:50px; height:4px; background:var(--secondary); margin:10px auto;"></div>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card"><h3>🛋️ Koltuk Yıkama</h3><p>Tüm kumaş türlerine uygun, doku zedelemeyen derin temizlik.</p></div>
+        <div class="feature-card"><h3>🦠 Buharlı Dezenfekte</h3><p>Kimyasal kullanmadan yüksek ısı ile mayt ve akar temizliği.</p></div>
+        <div class="feature-card"><h3>🍷 Zorlu Lekeler</h3><p>Çay, kahve ve kalem lekeleri için profesyonel leke sökücüler.</p></div>
+    </div>
 </section>
 
-<section id="bolgeler" class="district-section">
-<div class="section-title"><h2>Hizmet Bölgelerimiz</h2><p>Ankara'nın her noktasına bir telefon kadar yakınız</p></div>
-<div class="district-grid">
-<a href="incek.html" class="district-link">İncek<span class="district-desc">İncek’te evinize gelerek koltuklarınızı derinlemesine temizliyoruz.</span></a>
-<a href="etimesgut.html" class="district-link">Etimesgut<span class="district-desc">Etimesgut’ta profesyonel ekip ve ekipman ile koltuklarınızı hijyenik hale getiriyoruz.</span></a>
-<a href="eryaman.html" class="district-link">Eryaman<span class="district-desc">Eryaman bölgesinde kahve ve şarap lekelerini özel formüllerle çıkarıyoruz.</span></a>
-<a href="baglica.html" class="district-link">Bağlıca<span class="district-desc">Bağlıca’da koltuklarınızın hijyenini ve temizliğini sağlıyoruz.</span></a>
-<a href="cankaya.html" class="district-link">Çankaya<span class="district-desc">Çankaya’da evinize gelerek hızlı ve güvenilir koltuk temizliği sunuyoruz.</span></a>
-<a href="cayyolu.html" class
+<section id="galeri" style="padding:40px 20px; background:#fff;">
+    <h2 style="text-align:center; margin-bottom:30px; font-family:'Montserrat';">Uygulama Örneklerimiz</h2>
+    <div class="gallery-wrapper">
+        <div class="gallery-item"><img src="foto1.jpg" alt="Koltuk Yıkama Ankara" loading="lazy"></div>
+        <div class="gallery-item"><img src="foto2.jpg" alt="Buharlı Temizlik" loading="lazy"></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Leke Çıkarma" loading="lazy"></div>
+        <div class="gallery-item"><img src="foto4.jpg" alt="Ankara Temizlik" loading="lazy"></div>
+    </div>
+</section>
+
+<section id="bolgeler" style="padding:60px 20px; max-width:1200px; margin:auto;">
+    <h2 style="text-align:center; margin-bottom:30px;">Hizmet Bölgelerimiz</h2>
+    <div class="district-grid">
+        <a href="#" class="district-link">İncek</a>
+        <a href="#" class="district-link">Etimesgut</a>
+        <a href="#" class="district-link">Eryaman</a>
+        <a href="#" class="district-link">Bağlıca</a>
+        <a href="#" class="district-link">Çankaya</a>
+        <a href="#" class="district-link">Çayyolu</a>
+        <a href="#" class="district-link">Ümitköy</a>
+        <a href="#" class="district-link">Yaşamkent</a>
+        <a href="#" class="district-link">Sincan</a>
+        <a href="#" class="district-link">Yenikent</a>
+    </div>
+</section>
+
+<footer style="background:var(--primary); color:#fff; padding:40px 20px; text-align:center; margin-bottom:60px;">
+    <p><strong>Velux Koltuk Temizleme</strong></p>
+    <p>Ankara'nın Hijyen Noktası</p>
+    <div style="margin-top:20px; font-size:12px; opacity:0.7;">© 2026 Tüm Hakları Saklıdır.</div>
+</footer>
+
+<div class="mobile-nav">
+    <a href="tel:05399234374" class="m-btn" style="background:var(--primary);">Hemen Ara</a>
+    <a href="https://wa.me/905399234374" class="m-btn" style="background:var(--secondary);">WhatsApp</a>
+</div>
+
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('.nav-menu');
+    if(nav.style.display === 'flex') {
+        nav.style.display = 'none';
+    } else {
+        nav.style.display = 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.top = '65px';
+        nav.style.left = '0';
+        nav.style.width = '100%';
+        nav.style.background = '#fff';
+        nav.style.padding = '20px';
+    }
+}
+</script>
+
+</body>
+</html>
