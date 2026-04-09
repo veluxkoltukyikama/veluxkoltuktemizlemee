@@ -1,16 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://veluxkoltuktemizleme.com/</loc>
-  </url>
-
-  <url>
-    <loc>https://veluxkoltuktemizleme.com/#hizmetler</loc>
-  </url>
-
-  <url>
-    <loc>https://veluxkoltuktemizleme.com/#iletisim</loc>
-  </url>
-
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/</loc>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/hizmetler</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/galeri</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/incek.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/etimesgut.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/eryaman.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/baglica.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/cankaya.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/cayyolu.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/umitkoy.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/yasamkent.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/turkuaz.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/konutkent.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/sincan.html</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.veluxkoltuktemizleme.com/yenikent.html</loc>
+        <priority>0.7</priority>
+    </url>
 </urlset>
