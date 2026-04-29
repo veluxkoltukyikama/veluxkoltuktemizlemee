@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Ankara Koltuk Yıkama | Etimesgut, Eryaman, Çankaya | Velux Temizlik</title>
-    <meta name="description" content="Ankara'da 140°C buharlı koltuk yıkama. Etimesgut, Eryaman, Çankaya ve tüm semtlerde profesyonel leke çıkarma ve hijyen garantili yerinde temizlik servisi.">
-    <meta name="keywords" content="ankara koltuk yıkama, etimesgut koltuk yıkama, eryaman koltuk yıkama, buharlı koltuk temizleme, yerinde koltuk yıkama ankara">
+    <title>Ankara Koltuk Yıkama | Buharlı & Yerinde Temizlik | Velux</title>
+    <meta name="description" content="Velux Koltuk Yıkama ile Ankara genelinde 140°C buharlı temizlik. Etimesgut, Eryaman ve Çankaya dahil tüm Ankara'da profesyonel yerinde koltuk yıkama servisi.">
+    <meta name="keywords" content="ankara koltuk yıkama, etimesgut koltuk yıkama, eryaman koltuk yıkama, buharlı koltuk temizleme, yerinde koltuk yıkama ankara, çankaya koltuk yıkama, velux koltuk yıkama">
     
     <link rel="canonical" href="https://www.veluxkoltuktemizleme.com/">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -15,21 +15,36 @@
     {
       "@context": "https://schema.org",
       "@type": "CleaningService",
-      "name": "Velux Koltuk Temizleme",
+      "name": "Velux Koltuk Yıkama",
       "image": "https://www.veluxkoltuktemizleme.com/foto8.jpg",
+      "logo": "https://www.veluxkoltuktemizleme.com/favicon.png",
+      "@id": "https://www.veluxkoltuktemizleme.com/",
+      "url": "https://www.veluxkoltuktemizleme.com/",
       "telephone": "+905399234374",
       "priceRange": "₺₺",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Ankara Genel Hizmet Ağı (Tüm İlçeler)",
         "addressLocality": "Ankara",
+        "postalCode": "06000",
         "addressCountry": "TR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "20:30"
       },
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 39.9334,
         "longitude": 32.8597
       },
-      "areaServed": ["Etimesgut", "Eryaman", "Sincan", "Çankaya", "Bağlıca", "İncek", "Çayyolu", "Ümitköy", "Yaşamkent", "Yenikent"]
+      "areaServed": [
+        "Etimesgut", "Eryaman", "Sincan", "Çankaya", "Bağlıca", "İncek", "Çayyolu", "Ümitköy", "Yaşamkent", "Yenikent", "Keçiören", "Yenimahalle", "Gölbaşı", "Mamak", "Altındağ"
+      ]
     }
     </script>
 
@@ -51,7 +66,7 @@
         .hero-content h1 { font-family:'Montserrat'; font-size:clamp(1.8rem,6vw,3.5rem); margin-bottom:15px; text-transform:uppercase; line-height:1.1; }
         .cta-box { display:flex; flex-direction:column; gap:12px; max-width:350px; margin:auto; }
         
-        .btn { padding:16px 30px; border-radius:50px; text-decoration:none; font-weight:800; transition:0.3s; display:inline-flex; align-items:center; justify-content:center; gap:10px; font-size:16px; border:none; }
+        .btn { padding:16px 30px; border-radius:50px; text-decoration:none; font-weight:800; transition:0.3s; display:inline-flex; align-items:center; justify-content:center; gap:10px; font-size:16px; border:none; cursor: pointer; }
         .btn-call { background: var(--accent); color:#000; }
         .btn-whatsapp { background: var(--secondary); color:#fff; }
         .btn:hover { transform: scale(1.05); }
@@ -68,12 +83,15 @@
 
         .seo-content { padding: 40px 20px; max-width: 1000px; margin: auto; }
         .district-seo-card { background: #fff; padding: 25px; border-radius: 15px; margin-bottom: 20px; border-left: 5px solid var(--primary); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .district-seo-card h2 { color: var(--primary); margin-bottom: 15px; font-family: 'Montserrat'; }
 
         .district-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:10px; padding: 20px; max-width: 1200px; margin: auto; }
         .district-link { background:#fff; color:var(--primary); padding:12px; border-radius:10px; text-decoration:none; font-size:14px; font-weight:700; text-align:center; border: 1px solid #e2e8f0; transition: 0.2s; }
         .district-link:hover { background: var(--primary); color: #fff; }
 
         footer { background:var(--primary); color:#fff; padding:50px 20px 110px; text-align:center; }
+        .footer-info { font-size: 14px; margin-top: 15px; opacity: 0.9; }
+
         .mobile-nav { position:fixed; bottom:0; width:100%; display:none; grid-template-columns:1fr 1fr; z-index:9999; }
         .m-btn { padding:18px; text-align:center; color:#fff; text-decoration:none; font-weight:bold; }
 
@@ -87,43 +105,47 @@
 
 <nav class="navbar">
     <div class="nav-container">
-        <a href="index.html" class="logo">VELUX <span>TEMİZLİK</span></a>
-        <div style="font-size:24px; color:var(--primary);">☰</div>
+        <a href="index.html" class="logo">VELUX <span>KOLTUK YIKAMA</span></a>
+        <div style="font-size:24px; color:var(--primary); cursor:pointer;">☰</div>
     </div>
 </nav>
 
 <header class="hero">
     <div class="hero-content">
         <h1>Ankara Buharlı <br><span style="color:var(--accent)">Koltuk Yıkama</span></h1>
-        <p>140°C Buhar Gücüyle Derinlemesine Hijyen</p>
+        <p>140°C Buhar Gücüyle Ankara Genelinde Yerinde Temizlik</p>
         <div class="cta-box">
             <a href="tel:05399234374" class="btn btn-call">📞 ŞİMDİ ARA</a>
-            <a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WHATSAPP</a>
+            <a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WHATSAPP MESAJ</a>
         </div>
     </div>
 </header>
 
 <section class="modern-stats">
-    <div class="stat-card"><strong>%100</strong><span>Hijyen</span></div>
-    <div class="stat-card"><strong>140°C</strong><span>Buhar</span></div>
+    <div class="stat-card"><strong>%100</strong><span>Müşteri Memnuniyeti</span></div>
+    <div class="stat-card"><strong>140°C</strong><span>Buhar Gücü</span></div>
 </section>
 
 <section class="gallery-section">
     <div class="gallery-wrapper">
-        <div class="gallery-item"><img src="foto1.jpg" alt="Ankara koltuk yıkama servisi" loading="lazy"></div>
-        <div class="gallery-item"><img src="foto2.jpg" alt="Buharlı koltuk temizleme Ankara" loading="lazy"></div>
-        <div class="gallery-item"><img src="foto3.jpg" alt="Leke çıkarma uygulaması" loading="lazy"></div>
+        <div class="gallery-item"><img src="foto1.jpg" alt="Velux Koltuk Yıkama Ankara Hizmeti" loading="lazy"></div>
+        <div class="gallery-item"><img src="foto2.jpg" alt="Ankara Buharlı Koltuk Temizleme" loading="lazy"></div>
+        <div class="gallery-item"><img src="foto3.jpg" alt="Profesyonel Leke Çıkarma İşlemi" loading="lazy"></div>
     </div>
 </section>
 
-<section class="seo-content">
-    <div class="district-seo-card">
-        <h2>Ankara Profesyonel Koltuk Yıkama</h2>
-        <p>Velux Temizlik olarak Ankara genelinde; Etimesgut, Eryaman, Çankaya ve Bağlıca başta olmak üzere tüm semtlere yerinde koltuk yıkama hizmeti sunuyoruz. İnatçı lekelere profesyonel çözümler üretiyoruz.</p>
-    </div>
-</section>
+<main class="seo-content">
+    <article class="district-seo-card">
+        <h2>Ankara Profesyonel Koltuk Yıkama Servisi</h2>
+        <p><strong>Velux Koltuk Yıkama</strong> olarak Ankara genelinde profesyonel hizmet veriyoruz. <strong>Etimesgut, Eryaman, Çankaya, Bağlıca, Yenimahalle, Keçiören</strong> ve tüm Ankara semtlerine yerinde buharlı temizlik sunuyoruz. İnatçı lekeler ve derinlemesine hijyen için doğru adrestesiniz.</p>
+        <br>
+        <h3>Neden Velux Koltuk Yıkama?</h3>
+        <p>Yüksek ısıdaki buhar teknolojimizle koltuklarınızdaki mikrop, bakteri ve maytları %99.9 oranında yok ediyoruz. Kullandığımız özel solüsyonlar kumaş yapısını bozmaz, sağlığınızı riske atmaz.</p>
+    </article>
+</main>
 
 <section id="bolgeler">
+    <div style="text-align: center; padding-top: 20px;"><h3>Ankara Hizmet Bölgelerimiz</h3></div>
     <div class="district-grid">
         <a href="etimesgut.html" class="district-link">Etimesgut</a>
         <a href="eryaman.html" class="district-link">Eryaman</a>
@@ -134,16 +156,24 @@
         <a href="umitkoy.html" class="district-link">Ümitköy</a>
         <a href="sincan.html" class="district-link">Sincan</a>
         <a href="yasamkent.html" class="district-link">Yaşamkent</a>
-        <a href="yenikent.html" class="district-link">Yenikent</a>
+        <a href="yenimahalle.html" class="district-link">Yenimahalle</a>
+        <a href="kecioren.html" class="district-link">Keçiören</a>
+        <a href="mamak.html" class="district-link">Mamak</a>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Velux Temizlik - Tüm Hakları Saklıdır.</p>
+    <p><strong>Velux Koltuk Yıkama - Ankara</strong></p>
+    <div class="footer-info">
+        <p>Çalışma Saatlerimiz: Haftanın 7 Günü 09:00 - 20:30</p>
+        <p>Tüm Ankara Genelinde Yerinde Hizmet</p>
+        <br>
+        <p>©️ 2026 Velux Temizlik - Tüm Hakları Saklıdır.</p>
+    </div>
 </footer>
 
 <div class="mobile-nav">
-    <a href="tel:05399234374" class="m-btn" style="background:var(--primary);">ARA</a>
+    <a href="tel:05399234374" class="m-btn" style="background:var(--primary);">HEMEN ARA</a>
     <a href="https://wa.me/905399234374" class="m-btn" style="background:var(--secondary);">WHATSAPP</a>
 </div>
 
