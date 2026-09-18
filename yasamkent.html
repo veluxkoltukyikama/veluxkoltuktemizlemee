@@ -1,141 +1,365 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaşamkent Koltuk Yıkama | Velux Profesyonel Buharlı Temizlik</title>
-    <meta name="description" content="Yaşamkent'te profesyonel koltuk yıkama hizmeti. Buharlı dezenfeksiyon, hassas kumaş bakımı ve yerinde servis. Yaşamkent sitelerine özel hızlı randevu!">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #1E3A8A; 
-            --secondary: #25D366; 
-            --accent: #FACC15; 
-            --bg-light: #f8fafc;
-            --text-dark: #1e293b;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Google İndeksleme Etiketleri -->
+  <title>Yaşamkent Koltuk Yıkama | Velux Buharlı Yerinde Temizlik</title>
+  <meta name="description" content="Yaşamkent, Alacaatlı ve Türkkonut bölgesinde %100 hijyen garantili, 140°C buharlı ve leke çıkarmalı profesyonel koltuk, yatak ve halı yıkama servisi.">
+  <meta name="keywords" content="yaşamkent koltuk yıkama, alacaatlı koltuk yıkama, türkkonut koltuk temizleme, yaşamkent halı yıkama, velux koltuk yıkama">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://veluxkoltuktemizleme.com/yasamkent.html">
+
+  <!-- Open Graph / Sosyal Medya -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yaşamkent Yerinde Koltuk Yıkama | Velux Temizlik">
+  <meta property="og:description" content="Yaşamkent ve çevresinde profesyonel buharlı koltuk yıkama hizmeti. Hemen arayın veya WhatsApp'tan fiyat alın.">
+  <meta property="og:locale" content="tr_TR">
+
+  <!-- Google SEO için Schema.org Yapısal Verisi (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Velux Koltuk Yıkama - Yaşamkent",
+    "image": "https://veluxkoltuktemizleme.com/logo.png",
+    "telePhone": "+905399234374",
+    "url": "https://veluxkoltuktemizleme.com/yasamkent.html",
+    "priceRange": "₺₺",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Yaşamkent",
+      "addressRegion": "Ankara",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.8653,
+      "longitude": 32.6511
+    },
+    "areaServed": [
+      "Yaşamkent",
+      "Alacaatlı",
+      "Türkkonut",
+      "Çayyolu",
+      "Dodurga",
+      "Incek"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "21:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "142"
+    }
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brandDark: '#0f172a',
+            brandBlue: '#2563eb',
+            brandGreen: '#16a34a',
+          }
         }
+      }
+    }
+  </script>
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Open Sans', sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; scroll-behavior: smooth; }
-        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
 
-        /* --- Navigasyon --- */
-        .navbar { background: #fff; box-shadow: 0 2px 15px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 2000; }
-        .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
-        .logo { font-size: 26px; color: var(--primary); text-decoration: none; font-weight: 800; }
-        .logo span { color: var(--secondary); }
-        .nav-menu { display: flex; list-style: none; gap: 20px; }
-        .nav-menu a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 14px; }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.90) 0%, rgba(30, 41, 59, 0.85) 100%),
+                  url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;
+    }
 
-        /* --- Hero Bölümü --- */
-        .hero-district { 
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('foto1.jpg'); 
-            background-size: cover; background-position: center;
-            padding: 120px 20px; text-align: center; color: #fff;
-        }
-        .hero-district h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 15px; text-transform: uppercase; }
-        .hero-district p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 35px; opacity: 0.9; }
-
-        /* --- Butonlar --- */
-        .btn { padding: 18px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; transition: 0.4s; font-size: 16px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .btn-call { background: var(--accent); color: #000; }
-        .btn-whatsapp { background: var(--secondary); color: #fff; }
-        .btn:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
-
-        /* --- İçerik Alanı --- */
-        .main-card { max-width: 1100px; margin: -60px auto 40px; background: #fff; padding: 50px 30px; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.05); position: relative; z-index: 10; }
-        .main-card h2 { color: var(--primary); font-size: 2.2rem; margin-bottom: 25px; text-align: center; }
-        .main-card p { margin-bottom: 20px; font-size: 1.1rem; color: #475569; text-align: justify; }
-
-        /* --- Kalite Detayları --- */
-        .quality-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
-        .quality-card { background: #f8fafc; padding: 30px; border-radius: 15px; border-left: 5px solid var(--primary); }
-        .quality-card h3 { color: var(--primary); margin-bottom: 10px; font-size: 1.3rem; }
-
-        /* --- Galeri --- */
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 40px; }
-        .gallery-item { border-radius: 15px; overflow: hidden; height: 260px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
-        .gallery-item:hover img { transform: scale(1.1); }
-
-        /* --- Mobil Alt Bar --- */
-        .mobile-nav { position: fixed; bottom: 0; width: 100%; display: none; z-index: 3000; grid-template-columns: 1fr 1fr; }
-        .m-btn { padding: 20px; text-align: center; color: #fff; text-decoration: none; font-weight: bold; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; }
-        .m-call { background: var(--primary); }
-        .m-whatsapp { background: var(--secondary); }
-
-        @media (max-width: 768px) {
-            .nav-menu { display: none; }
-            .mobile-nav { display: grid; }
-            .main-card { margin-top: -40px; padding: 30px 20px; }
-            .hero-district h1 { font-size: 1.8rem; }
-        }
-    </style>
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s infinite ease-in-out;
+    }
+  </style>
 </head>
-<body>
+<body class="pb-20 md:pb-0">
 
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="index.html" class="logo">VELUX <span>TEMİZLİK</span></a>
-        <ul class="nav-menu">
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="index.html#bolgeler">Bölgelerimiz</a></li>
-            <li><a href="https://wa.me/905399234374">Fiyat Al</a></li>
-        </ul>
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 bg-[#0f172a] text-white shadow-lg border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center space-x-2 group">
+        <div class="bg-blue-600 text-white p-2 rounded-lg group-hover:bg-blue-500 transition-colors">
+          <i class="fa-solid fa-sparkles text-lg"></i>
+        </div>
+        <span class="font-bold text-lg md:text-xl tracking-tight text-white">Velux <span class="text-blue-400 font-semibold">Koltuk Yıkama</span></span>
+      </a>
+
+      <!-- Quick Call Button in Header -->
+      <a href="tel:05399234374" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg flex items-center space-x-2 transition-all shadow-md active:scale-95">
+        <i class="fa-solid fa-phone text-xs"></i>
+        <span>Ara</span>
+      </a>
     </div>
-</nav>
+  </header>
 
-<header class="hero-district">
-    <h1>Yaşamkent Koltuk Yıkama</h1>
-    <p>Yaşamkent'in seçkin konutlarına özel, profesyonel buharlı vakum teknolojisiyle derinlemesine hijyen. Koltuklarınız ilk günkü temizliğine kavuşsun.</p>
-    <div class="cta-group">
-        <a href="tel:05399234374" class="btn btn-call">📞 Hemen Ara</a>
-        <a href="https://wa.me/905399234374" class="btn btn-whatsapp">💬 WhatsApp Mesaj</a>
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-12 md:py-20 px-4 text-center relative">
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <!-- Location Tag Header -->
+      <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/30 px-3 py-1.5 rounded-full text-xs md:text-sm text-blue-300 font-medium">
+        <i class="fa-solid fa-location-dot text-red-400"></i>
+        <span>Yaşamkent Özel Yerinde Servis Bölgesi</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight tracking-tight">
+        Yaşamkent, Alacaatlı & Türkkonut<br class="hidden sm:inline"> 
+        <span class="text-blue-400">Profesyonel Koltuk ve Halı Yıkama</span>
+      </h1>
+
+      <!-- Description Subtext -->
+      <p class="text-slate-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+        Yaşamkent bölgesine özel yerinde 140°C buharlı temizlik, antibakteriyel leke çıkarma garantisi ve aynı gün hızlı servis imkanı.
+      </p>
+
+      <!-- Equal Action Buttons (CTA) -->
+      <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center items-center max-w-md mx-auto">
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.me/905399234374?text=Merhaba,%20Ya%C5%9Famkent'ten%20koltuk%20y%C4%B1kama%20fiyat%C4%B1%20almak%20istiyorum." 
+           target="_blank" 
+           class="w-full sm:w-1/2 h-13 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2.5 shadow-lg shadow-emerald-900/40 transition-all active:scale-95">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span class="text-sm md:text-base">WhatsApp İle Fiyat Al</span>
+        </a>
+
+        <!-- Phone CTA -->
+        <a href="tel:05399234374" 
+           class="w-full sm:w-1/2 h-13 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2.5 shadow-lg shadow-blue-900/40 transition-all active:scale-95">
+          <i class="fa-solid fa-phone text-lg"></i>
+          <span class="text-sm md:text-base">Hemen Ara</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="pt-6 grid grid-cols-3 gap-2 border-t border-slate-700/60 max-w-lg mx-auto text-xs text-slate-300">
+        <div class="flex flex-col items-center space-y-1">
+          <i class="fa-solid fa-shield-halved text-blue-400 text-base"></i>
+          <span>Leke Garanti</span>
+        </div>
+        <div class="flex flex-col items-center space-y-1">
+          <i class="fa-solid fa-temperature-high text-red-400 text-base"></i>
+          <span>140°C Buhar</span>
+        </div>
+        <div class="flex flex-col items-center space-y-1">
+          <i class="fa-solid fa-house-chimney text-emerald-400 text-base"></i>
+          <span>Yerinde Servis</span>
+        </div>
+      </div>
+
     </div>
-</header>
+  </section>
 
-<main class="main-card">
-    <h2>Yaşamkent'te Güvenilir ve Titiz Temizlik</h2>
-    <p><b>Yaşamkent koltuk yıkama</b> ihtiyaçlarınızda Velux Temizlik olarak, bölgenin yüksek standartlarına uygun bir hizmet sunuyoruz. Yaşamkent'teki geniş daireler ve siteler için sunduğumuz yerinde yıkama hizmeti ile mobilyalarınızı mikroplardan ve inatçı lekelerden arındırıyoruz.</p>
+  <!-- Service Regions Section (TIKLANABİLİR İLÇE LİNKLERİ) -->
+  <section class="py-10 px-4 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-6">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-blue-600 mb-1">Hızlı Adrese Servis</h2>
+        <h3 class="text-xl md:text-2xl font-extrabold text-slate-900">Diğer Servis Bölgelerimiz</h3>
+        <p class="text-xs text-slate-500 mt-1">Detaylı hizmet bilgisi için ilçenize tıklayın</p>
+      </div>
+
+      <!-- Region Badges Container -->
+      <div class="flex flex-wrap justify-center gap-2.5">
+        <a href="yasamkent.html" class="inline-flex items-center space-x-1.5 bg-blue-600 text-white border border-blue-600 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-white"></i>
+          <span>Yaşamkent</span>
+        </a>
+        <a href="cayyolu.html" class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-red-500 hover:text-white"></i>
+          <span>Çayyolu</span>
+        </a>
+        <a href="incek.html" class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-red-500 hover:text-white"></i>
+          <span>İncek</span>
+        </a>
+        <a href="cankaya.html" class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-red-500 hover:text-white"></i>
+          <span>Çankaya</span>
+        </a>
+        <a href="eryaman.html" class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-red-500 hover:text-white"></i>
+          <span>Eryaman</span>
+        </a>
+        <a href="etimesgut.html" class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-red-500 hover:text-white"></i>
+          <span>Etimesgut</span>
+        </a>
+        <a href="baglica.html" class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-red-500 hover:text-white"></i>
+          <span>Bağlıca</span>
+        </a>
+        <a href="umitkoy.html" class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-600 hover:text-white border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all duration-200 active:scale-95">
+          <i class="fa-solid fa-location-dot text-red-500 hover:text-white"></i>
+          <span>Ümitköy</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Features Section -->
+  <section class="py-12 px-4 bg-slate-50">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-blue-600 mb-1">Profesyonel Çözümler</h2>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">Yaşamkent Hizmetlerimiz & Özelliklerimiz</h3>
+        <p class="text-slate-600 text-sm mt-2 max-w-xl mx-auto">Son teknoloji buharlı makinelerimiz ve bitkisel temizleyici şampuanlarımızla koltuklarınızı ilk günkü temizliğine kavuşturuyoruz.</p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-blue-100 text-blue-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-temperature-arrow-up text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">140°C Buharlı Koltuk Yıkama</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Yüksek sıcaklıktaki buhar gücüyle kumaşın en derinindeki mite, bakteri ve kötü kokuları yok ediyoruz.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-indigo-100 text-indigo-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-rug text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">Halı & Kilim Temizliği</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Özel dokuma ve hassas halılarınızı dokusuna zarar vermeden derinlemesine yıkıyor, kurutuyoruz.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-emerald-100 text-emerald-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">Leke Çıkarma Garantisi</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Kahve, çay, mürekkep ve zorlu organik lekelerde özel leke çıkarıcı solüsyonlarımız ile %99 başarı.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-amber-100 text-amber-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-truck-fast text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">Yerinde / Evde Servis</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Randevu saatinizde Yaşamkent'teki adresinize gelip eşyalarınızı taşımadan evinizde profesyonel temizlik sağlıyoruz.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO Text Block (Google Sıralaması İçin) -->
+  <section class="py-8 px-4 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto bg-slate-50 p-6 rounded-2xl border border-slate-200">
+      <h3 class="text-lg font-bold text-slate-900 mb-2">Yaşamkent Bölgesinde Güvenilir Yerinde Koltuk Temizliği</h3>
+      <p class="text-slate-600 text-sm leading-relaxed mb-3">
+        Velux Koltuk Yıkama olarak Yaşamkent, Alacaatlı, Türkkonut ve Dodurga mahallelerinde profesyonel koltuk, sandalye, yatak ve araç koltuğu yıkama hizmeti vermekteyiz.
+      </p>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Koltuk takımınızın kumaş türüne özel yıkama şampuanları ve yüksek emiş güçlü sanayi tipi vakum makinelerimiz ile koltuklarınız kirlere elveda derken kısa sürede kuruyarak kullanıma hazır hale gelir.
+      </p>
+    </div>
+  </section>
+
+  <!-- Banner CTA -->
+  <section class="py-10 px-4 bg-blue-600 text-white text-center">
+    <div class="max-w-3xl mx-auto space-y-4">
+      <h3 class="text-xl md:text-2xl font-extrabold">Yaşamkent'te Koltuklarınız İlk Günkü Gibi Tertemiz Olsun</h3>
+      <p class="text-blue-100 text-sm md:text-base">Fotoğraf gönderin, anında fiyat teklifi alın. Detaylı bilgi ve randevu için bize ulaşın.</p>
+      <div class="pt-2">
+        <a href="https://wa.me/905399234374?text=Merhaba,%20Ya%C5%9Famkent'ten%20koltuklar%C4%B1m%C4%B1n%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20fiyat%20almak%20istiyorum." target="_blank" class="inline-flex items-center space-x-2 bg-white text-blue-600 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-slate-100 transition-colors">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Fotoğraf Gönder & Fiyat Al</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center text-xs md:text-sm border-t border-slate-800">
+    <div class="max-w-4xl mx-auto space-y-3">
+      <p class="font-bold text-white text-base">Velux Koltuk Yıkama - Yaşamkent</p>
+      <p class="text-slate-300 font-medium">İletişim: <a href="tel:05399234374" class="text-blue-400 hover:underline">0539 923 43 74</a></p>
+      <p>Yaşamkent, Alacaatlı, Türkkonut, Çayyolu, İncek Yerinde Temizlik Hizmetleri</p>
+      <p class="text-slate-500 pt-2">©️ 2026 Velux Koltuk Yıkama. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Right-side Floating Sticky Action Buttons -->
+  <div class="fixed bottom-4 right-4 z-50 flex flex-col space-y-3 items-end">
     
-    <div class="quality-grid">
-        <div class="quality-card">
-            <h3>✅ Profesyonel Vakum</h3>
-            <p>Yüksek emiş gücüne sahip makinelerimizle koltuk süngerlerindeki toz ve kirleri tamamen çekiyoruz.</p>
-        </div>
-        <div class="quality-card">
-            <h3>✅ Buharlı Dezenfekte</h3>
-            <p>140 derece ısı ile kimyasal kullanmadan mayt ve bakterileri yok ederek sağlıklı bir ortam sağlıyoruz.</p>
-        </div>
-        <div class="quality-card">
-            <h3>✅ Bitkisel Şampuan</h3>
-            <p>Aileniz ve evcil hayvanlarınız için güvenli, kalıntı bırakmayan doğal temizlik ürünleri kullanıyoruz.</p>
-        </div>
-    </div>
+    <!-- Phone Floating Circle Button -->
+    <a href="tel:05399234374" 
+       title="Hemen Ara" 
+       class="w-12 h-12 md:w-13 md:h-13 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-transform active:scale-95 border-2 border-white">
+      <i class="fa-solid fa-phone text-lg md:text-xl"></i>
+    </a>
 
-    <h3>Neden Yaşamkent Velux Temizlik?</h3>
-    <p>Yaşamkent bölgesindeki tüm sitelere servisimiz mevcuttur. Uzman ekibimiz, koltuk kumaşınızın türüne göre (keten, nubuk, kadife vb.) en doğru temizlik yöntemini belirleyerek doku kaybını önler. Hızlı kuruma teknolojimiz sayesinde koltuklarınız kısa sürede kullanıma hazır hale gelir.</p>
+    <!-- WhatsApp Floating Circle Button -->
+    <a href="https://wa.me/905399234374?text=Merhaba,%20Ya%C5%9Famkent'ten%20koltuk%20y%C4%B1kama%20hakk%C4%B1nda%20bilgi%20ve%20fiyat%20almak%20istiyorum." 
+       target="_blank" 
+       title="WhatsApp Destek" 
+       class="w-12 h-12 md:w-13 md:h-13 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl transition-transform active:scale-95 border-2 border-white animate-pulse-subtle">
+      <i class="fa-brands fa-whatsapp text-xl md:text-2xl"></i>
+    </a>
 
-    <div class="gallery-grid">
-        <div class="gallery-item"><img src="foto2.jpg" alt="Yaşamkent Koltuk Yıkama"></div>
-        <div class="gallery-item"><img src="foto3.jpg" alt="Yaşamkent Buharlı Temizlik"></div>
-        <div class="gallery-item"><img src="foto4.jpg" alt="Leke Çıkarma Uygulaması"></div>
-        <div class="gallery-item"><img src="foto5.jpg" alt="Tertemiz Koltuk Sonucu"></div>
-    </div>
-</main>
-
-<footer style="background: var(--primary); color: #fff; padding: 50px 20px; text-align: center; margin-bottom: 60px;">
-    <h3>VELUX TEMİZLİK - YAŞAMKENT</h3>
-    <p style="margin-top: 10px; opacity: 0.8;">Hizmet kalitemiz referansımızdır.</p>
-    <p style="font-size: 14px; margin-top: 20px;">&copy; 2026 Tüm Hakları Saklıdır.</p>
-</footer>
-
-<div class="mobile-nav">
-    <a href="tel:05399234374" class="m-btn m-call">📞 ARA</a>
-    <a href="https://wa.me/905399234374" class="m-btn m-whatsapp">💬 WHATSAPP</a>
-</div>
+  </div>
 
 </body>
 </html>
