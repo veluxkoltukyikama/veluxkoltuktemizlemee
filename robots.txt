@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.veluxkoltuktemizleme.com/sitemap.xml
+Sitemap: https://veluxkoltuktemizleme.com/sitemap.xml
