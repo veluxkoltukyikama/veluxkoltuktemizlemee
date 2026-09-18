@@ -1,251 +1,288 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çayyolu, İncek, Beytepe Koltuk ve Halı Yıkama - Velux & Yaprak</title>
-    <meta name="description" content="Çayyolu, İncek, Beytepe, Mutlukent ve Alacaatlı bölgesinde profesyonel koltuk, halı ve yatak yıkama hizmeti. Yerinde buharlı temizlik ve uygun fiyatlar.">
-    <meta name="keywords" content="Çayyolu koltuk yıkama, İncek halı yıkama, Beytepe koltuk temizleme, Mutlukent halı yıkama, Alacaatlı koltuk yıkama, Ankara koltuk yıkama">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary-color: #0d6efd;
-            --secondary-color: #198754;
-            --dark-color: #212529;
-            --light-bg: #f8f9fa;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velux Koltuk Yıkama | Çankaya, Çayyolu, İncek, Beytepe Koltuk & Halı Yıkama</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brandDark: '#0f172a',
+            brandBlue: '#2563eb',
+            brandGreen: '#16a34a',
+          }
         }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-        }
-        .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            padding: 100px 0;
-            text-align: center;
-        }
-        .service-card {
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .badge-region {
-            background-color: #e9ecef;
-            color: #495057;
-            font-size: 0.95rem;
-            margin: 4px;
-            padding: 8px 14px;
-            border-radius: 20px;
-            display: inline-block;
-        }
-        .sticky-btn-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .btn-floating {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            color: white !important;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            text-decoration: none;
-        }
-        .btn-whatsapp { background-color: #25d366; }
-        .btn-phone { background-color: #0d6efd; }
-        .faq-item {
-            border-bottom: 1px solid #dee2e6;
-            padding: 15px 0;
-        }
-    </style>
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.90) 0%, rgba(30, 41, 59, 0.85) 100%),
+                  url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1200') center/cover no-repeat;
+    }
+
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 3s infinite ease-in-out;
+    }
+  </style>
 </head>
-<body>
+<body class="pb-20 md:pb-0">
 
-    <!-- Header / Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Velux & Yaprak Temizlik</a>
-            <a href="tel:05000000000" class="btn btn-outline-light d-lg-none">
-                <i class="fas fa-phone-alt me-1"></i> Ara
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#hizmetler">Hizmetlerimiz</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#bolgeler">Hizmet Bölgeleri</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#neden-biz">Neden Biz?</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sss">SSS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
-                </ul>
-            </div>
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 bg-[#0f172a] text-white shadow-lg border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2 group">
+        <div class="bg-blue-600 text-white p-2 rounded-lg group-hover:bg-blue-500 transition-colors">
+          <i class="fa-solid fa-sparkles text-lg"></i>
         </div>
-    </nav>
+        <span class="font-bold text-lg md:text-xl tracking-tight text-white">Velux <span class="text-blue-400 font-semibold">Koltuk Yıkama</span></span>
+      </a>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="container">
-            <h1 class="display-4 fw-bold mb-3">Çayyolu, İncek & Beytepe Profesyonel Koltuk ve Halı Yıkama</h1>
-            <p class="lead mb-4">Derinlemesine buharlı temizlik, leke çıkarma garantisi ve %100 hijyenik vakumlama teknolojisi ile evinizde hijyen sağlayın.</p>
-            <div class="d-flex justify-content-center gap-3">
-                <a href="https://wa.me/905000000000?text=Merhaba,%20Çayyolu/İncek%20bölgesi%20için%20fiyat%20almak%20istiyorum." class="btn btn-success btn-lg">
-                    <i class="fab fa-whatsapp me-2"></i> WhatsApp İle Fiyat Al
-                </a>
-                <a href="tel:05000000000" class="btn btn-primary btn-lg">
-                    <i class="fas fa-phone-alt me-2"></i> Hemen Ara
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hizmet Bölgeleri Vurgusu -->
-    <section id="bolgeler" class="py-4 bg-light border-bottom">
-        <div class="container text-center">
-            <h6 class="text-uppercase text-muted fw-bold mb-2">Öncelikli Servis Bölgelerimiz</h6>
-            <div>
-                <span class="badge-region"><i class="fas fa-map-marker-alt text-danger me-1"></i> Çayyolu</span>
-                <span class="badge-region"><i class="fas fa-map-marker-alt text-danger me-1"></i> İncek</span>
-                <span class="badge-region"><i class="fas fa-map-marker-alt text-danger me-1"></i> Beytepe</span>
-                <span class="badge-region"><i class="fas fa-map-marker-alt text-danger me-1"></i> Mutlukent</span>
-                <span class="badge-region"><i class="fas fa-map-marker-alt text-danger me-1"></i> Alacaatlı</span>
-                <span class="badge-region"><i class="fas fa-map-marker-alt text-danger me-1"></i> Yaşamkent</span>
-                <span class="badge-region"><i class="fas fa-map-marker-alt text-danger me-1"></i> Ümitköy</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Hizmetler -->
-    <section id="hizmetler" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Hizmetlerimiz</h2>
-                <p class="text-muted">Son teknoloji makineler ve doğa dostu özel anti-alerjen şampuanlar kullanıyoruz.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 service-card p-4 text-center">
-                        <div class="display-5 text-primary mb-3"><i class="fas fa-couch"></i></div>
-                        <h4 class="card-title fw-bold">Yerinde Koltuk Yıkama</h4>
-                        <p class="card-text text-muted">Kumaş türüne özel yıkama teknikleri ve yüksek vakum gücüyle yerinde derinlemesine koltuk ve sandalye temizliği.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 service-card p-4 text-center">
-                        <div class="display-5 text-primary mb-3"><i class="fas fa-rug"></i></div>
-                        <h4 class="card-title fw-bold">Halı Temizleme</h4>
-                        <p class="card-text text-muted">Antibakteriyel şampuanlar ile cinsine özel otomatik yıkama ve hijyenik kurutma süreçleri.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 service-card p-4 text-center">
-                        <div class="display-5 text-primary mb-3"><i class="fas fa-bed"></i></div>
-                        <h4 class="card-title fw-bold">Yatak & Araç Koltuğu Yıkama</h4>
-                        <p class="card-text text-muted">Mite ve ev tozlarına karşı özel solüsyonlar ile derinlemesine yatak ve araç içi koltuk yıkama çözümleri.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Neden Biz? -->
-    <section id="neden-biz" class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="fw-bold mb-3">Neden Çayyolu ve İncek'te Bizi Tercih Etmelisiniz?</h2>
-                    <p class="lead">Bölgelerinize özel hızlı servis imkanıyla vakit kaybetmeden adresinize geliyoruz.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> High-Extraction profesyonel vakum makineleri</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> İnsan ve evcil hayvan sağlığına zararsız bitkisel temizleyiciler</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Hızlı kuruma süresi ve leke çıkarma odaklı çalışma</li>
-                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> %100 Müşteri Memnuniyeti ve Güven garantisi</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <div class="p-4 bg-white rounded shadow-sm">
-                        <h4 class="fw-bold mb-3"><i class="fas fa-clock text-warning me-2"></i> Hızlı Randevu Alın</h4>
-                        <p class="text-muted">Çayyolu, İncek, Beytepe, Mutlukent veya Alacaatlı bölgesindeki adresiniz için hemen müsaitlik durumunu öğrenin.</p>
-                        <a href="tel:05000000000" class="btn btn-outline-primary w-100 mb-2 py-2 fw-bold">Telefon: 0500 000 00 00</a>
-                        <a href="https://wa.me/905000000000" class="btn btn-success w-100 py-2 fw-bold"><i class="fab fa-whatsapp me-1"></i> WhatsApp İle Fotoğraf Gönderin</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sıkça Sorulan Sorular (SSS) -->
-    <section id="sss" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Sıkça Sorulan Sorular</h2>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="faq-item">
-                        <h5 class="fw-bold"><i class="far fa-question-circle text-primary me-2"></i> Yıkama sonrası koltuklar ne kadar sürede kurur?</h5>
-                        <p class="text-muted mb-0">Güçlü vakumlama sistemimiz sayesinde nem %80-90 oranında çekilir. Ortam sıcaklığına bağlı olarak ortalama 6 - 12 saat içerisinde tamamen kurur.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h5 class="fw-bold"><i class="far fa-question-circle text-primary me-2"></i> İncek / Çayyolu bölgesine servis ücreti var mı?</h5>
-                        <p class="text-muted mb-0">Çayyolu, İncek, Beytepe, Mutlukent ve Alacaatlı bölgelerine herhangi bir ekstra servis veya ulaşım ücreti yansıtılmamaktadır.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h5 class="fw-bold"><i class="far fa-question-circle text-primary me-2"></i> Kullanılan temizlik ürünleri kimyasal mı?</h5>
-                        <p class="text-muted mb-0">Hayır, çocuklarınız ve evcil hayvanlarınız için tamamen güvenli, anti-alerjen sertifikalı özel solüsyonlar kullanmaktayız.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="iletisim" class="bg-dark text-white py-4">
-        <div class="container text-center text-md-start">
-            <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <h5 class="fw-bold">Velux & Yaprak Koltuk / Halı Yıkama</h5>
-                    <p class="text-muted small">Ankara - Çayyolu, İncek, Beytepe, Mutlukent, Alacaatlı ve çevre bölgelerde profesyonel temizlik çözümleri.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-1"><strong>İletişim:</strong> 0500 000 00 00</p>
-                    <p class="mb-0"><strong>Çalışma Saatleri:</strong> Haftanın 7 Günü (08:30 - 20:00)</p>
-                </div>
-            </div>
-            <hr class="my-3 bg-secondary">
-            <div class="text-center text-muted small">
-                &copy; 2026 Velux & Yaprak Temizlik. Tüm Hakları Saklıdır.
-            </div>
-        </div>
-    </footer>
-
-    <!-- Sabit Hızlı İletişim Butonları -->
-    <div class="sticky-btn-container">
-        <a href="https://wa.me/905000000000" class="btn-floating btn-whatsapp" target="_blank" title="WhatsApp İletişim">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="tel:05000000000" class="btn-floating btn-phone" title="Hemen Ara">
-            <i class="fas fa-phone-alt"></i>
-        </a>
+      <!-- Quick Call Button in Header -->
+      <a href="tel:05399234374" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-lg flex items-center space-x-2 transition-all shadow-md active:scale-95">
+        <i class="fa-solid fa-phone text-xs"></i>
+        <span>Ara</span>
+      </a>
     </div>
+  </header>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Hero Section -->
+  <section class="hero-bg text-white py-12 md:py-20 px-4 text-center relative">
+    <div class="max-w-4xl mx-auto space-y-6">
+      
+      <!-- Location Tag Header -->
+      <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/30 px-3 py-1.5 rounded-full text-xs md:text-sm text-blue-300 font-medium">
+        <i class="fa-solid fa-location-dot text-red-400"></i>
+        <span>Ankara'nın Tüm Seçkin Bölgelerine Adrese Servis</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold leading-tight tracking-tight">
+        Çankaya, Çayyolu, İncek & Beytepe<br class="hidden sm:inline"> 
+        <span class="text-blue-400">Profesyonel Koltuk ve Halı Yıkama</span>
+      </h1>
+
+      <!-- Description Subtext -->
+      <p class="text-slate-300 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+        Derinlemesine buharlı temizlik, leke çıkarma garantisi ve %100 hijyenik vakumlama teknolojisi ile evinizde hijyen sağlayın.
+      </p>
+
+      <!-- Equal Action Buttons (CTA) -->
+      <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center items-center max-w-md mx-auto">
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.me/905399234374?text=Merhaba,%20koltuk%20y%C4%B1kama%20fiyat%C4%B1%20almak%20istiyorum." 
+           target="_blank" 
+           class="w-full sm:w-1/2 h-13 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2.5 shadow-lg shadow-emerald-900/40 transition-all active:scale-95">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span class="text-sm md:text-base">WhatsApp İle Fiyat Al</span>
+        </a>
+
+        <!-- Phone CTA -->
+        <a href="tel:05399234374" 
+           class="w-full sm:w-1/2 h-13 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2.5 shadow-lg shadow-blue-900/40 transition-all active:scale-95">
+          <i class="fa-solid fa-phone text-lg"></i>
+          <span class="text-sm md:text-base">Hemen Ara</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="pt-6 grid grid-cols-3 gap-2 border-t border-slate-700/60 max-w-lg mx-auto text-xs text-slate-300">
+        <div class="flex flex-col items-center space-y-1">
+          <i class="fa-solid fa-shield-halved text-blue-400 text-base"></i>
+          <span>Leke Garanti</span>
+        </div>
+        <div class="flex flex-col items-center space-y-1">
+          <i class="fa-solid fa-temperature-high text-red-400 text-base"></i>
+          <span>140°C Buhar</span>
+        </div>
+        <div class="flex flex-col items-center space-y-1">
+          <i class="fa-solid fa-house-chimney text-emerald-400 text-base"></i>
+          <span>Yerinde Servis</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Service Regions Section -->
+  <section class="py-10 px-4 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-6">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-blue-600 mb-1">Hızlı Adrese Servis</h2>
+        <h3 class="text-xl md:text-2xl font-extrabold text-slate-900">Öncelikli Servis Bölgelerimiz</h3>
+      </div>
+
+      <!-- Region Badges Container -->
+      <div class="flex flex-wrap justify-center gap-2.5">
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>Çayyolu</span>
+        </span>
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>İncek</span>
+        </span>
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>Beytepe</span>
+        </span>
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>Mutlukent</span>
+        </span>
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>Alacaatlı</span>
+        </span>
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>Yaşamkent</span>
+        </span>
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>Ümitköy</span>
+        </span>
+        <span class="inline-flex items-center space-x-1.5 bg-slate-100 hover:bg-blue-50 border border-slate-200 text-slate-800 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-colors cursor-default">
+          <i class="fa-solid fa-location-dot text-red-500"></i>
+          <span>Çankaya</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Features Section -->
+  <section class="py-12 px-4 bg-slate-50">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-xs uppercase tracking-widest font-bold text-blue-600 mb-1">Profesyonel Çözümler</h2>
+        <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">Hizmetlerimiz & Özelliklerimiz</h3>
+        <p class="text-slate-600 text-sm mt-2 max-w-xl mx-auto">Son teknoloji buharlı makinelerimiz ve bitkisel temizleyici şampuanlarımızla koltuklarınızı ilk günkü temizliğine kavuşturuyoruz.</p>
+      </div>
+
+      <!-- Feature Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-blue-100 text-blue-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-temperature-arrow-up text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">140°C Buharlı Koltuk Yıkama</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Yüksek sıcaklıktaki buhar gücüyle kumaşın en derinindeki mite, bakteri ve kötü kokuları yok ediyoruz.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-indigo-100 text-indigo-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-rug text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">Halı & Kilim Temizliği</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Özel dokuma ve hassas halılarınızı dokusuna zarar vermeden derinlemesine yıkıyor, kurutuyoruz.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-emerald-100 text-emerald-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">Leke Çıkarma Garantisi</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Kahve, çay, mürekkep ve zorlu organik lekelerde özel leke çıkarıcı solüsyonlarımız ile %99 başarı.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex items-start space-x-4">
+          <div class="bg-amber-100 text-amber-600 p-3.5 rounded-xl shrink-0">
+            <i class="fa-solid fa-truck-fast text-2xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">Yerinde / Evde Servis</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">Randevu saatinizde adresinize gelip eşyalarınızı taşımadan evinizde profesyonel temizlik sağlıyoruz.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner CTA -->
+  <section class="py-10 px-4 bg-blue-600 text-white text-center">
+    <div class="max-w-3xl mx-auto space-y-4">
+      <h3 class="text-xl md:text-2xl font-extrabold">Koltuklarınız İlk Günkü Gibi Tertemiz Olsun</h3>
+      <p class="text-blue-100 text-sm md:text-base">Fotoğraf gönderin, anında fiyat teklifi alın. Detaylı bilgi ve randevu için bize ulaşın.</p>
+      <div class="pt-2">
+        <a href="https://wa.me/905399234374?text=Merhaba,%20koltuklar%C4%B1m%C4%B1n%20foto%C4%9Fraf%C4%B1n%C4%B1%20g%C3%B6nderip%20fiyat%20almak%20istiyorum." target="_blank" class="inline-flex items-center space-x-2 bg-white text-blue-600 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-slate-100 transition-colors">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Fotoğraf Gönder & Fiyat Al</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center text-xs md:text-sm border-t border-slate-800">
+    <div class="max-w-4xl mx-auto space-y-3">
+      <p class="font-bold text-white text-base">Velux Koltuk Yıkama Ankara</p>
+      <p class="text-slate-300 font-medium">İletişim: <a href="tel:05399234374" class="text-blue-400 hover:underline">0539 923 43 74</a></p>
+      <p>Çankaya, Çayyolu, İncek, Beytepe, Mutlukent, Alacaatlı, Yaşamkent, Ümitköy Yerinde Temizlik Hizmetleri</p>
+      <p class="text-slate-500 pt-2">© 2026 Velux Koltuk Yıkama. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Right-side Floating Sticky Action Buttons -->
+  <div class="fixed bottom-4 right-4 z-50 flex flex-col space-y-3 items-end">
+    
+    <!-- Phone Floating Circle Button -->
+    <a href="tel:05399234374" 
+       title="Hemen Ara" 
+       class="w-12 h-12 md:w-13 md:h-13 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-transform active:scale-95 border-2 border-white">
+      <i class="fa-solid fa-phone text-lg md:text-xl"></i>
+    </a>
+
+    <!-- WhatsApp Floating Circle Button -->
+    <a href="https://wa.me/905399234374?text=Merhaba,%20koltuk%20y%C4%B1kama%20hakk%C4%B1nda%20bilgi%20ve%20fiyat%20almak%20istiyorum." 
+       target="_blank" 
+       title="WhatsApp Destek" 
+       class="w-12 h-12 md:w-13 md:h-13 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center shadow-2xl transition-transform active:scale-95 border-2 border-white animate-pulse-subtle">
+      <i class="fa-brands fa-whatsapp text-xl md:text-2xl"></i>
+    </a>
+
+  </div>
+
 </body>
 </html>
